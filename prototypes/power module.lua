@@ -23,7 +23,7 @@ data:extend({
     type = "module",
     name = "power-module",
     localised_description = {"item-description.power-module"},
-    icon = "__Kusaki Tod__/graphics/icon/power-module.png",
+    icon = "__Kusaki-Tod__/graphics/icon/power-module.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "module",
     category = "speed",
@@ -43,7 +43,7 @@ data:extend({
     type = "module",
     name = "power-module-2",
     localised_description = {"item-description.power-module"},
-    icon = "__Kusaki Tod__/graphics/icon/power-module-2.png",
+    icon = "__Kusaki-Tod__/graphics/icon/power-module-2.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "module",
     category = "speed",
@@ -63,7 +63,7 @@ data:extend({
     type = "module",
     name = "power-module-3",
     localised_description = {"item-description.power-module"},
-    icon = "__Kusaki Tod__/graphics/icon/power-module-3.png",
+    icon = "__Kusaki-Tod__/graphics/icon/power-module-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "module",
     category = "speed",
@@ -124,7 +124,7 @@ data:extend({
     type = "technology",
     name = "power-module",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__Kusaki Tod__/graphics/technology/power-module-1.png",
+    icon = "__Kusaki-Tod__/graphics/technology/power-module-1.png",
     effects =
     {
       {
@@ -150,7 +150,7 @@ data:extend({
     type = "technology",
     name = "power-module-2",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__Kusaki Tod__/graphics/technology/power-module-2.png",
+    icon = "__Kusaki-Tod__/graphics/technology/power-module-2.png",
     effects =
     {
       {
@@ -177,7 +177,7 @@ data:extend({
     type = "technology",
     name = "power-module-3",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__Kusaki Tod__/graphics/technology/power-module-3.png",
+    icon = "__Kusaki-Tod__/graphics/technology/power-module-3.png",
     effects =
     {
       {
