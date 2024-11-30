@@ -317,7 +317,8 @@ data:extend({
       {type = "item", name = "solar-panel", amount = 2},
 	  {type = "item", name = "advanced-circuit", amount = 16}
     },
-    results = {{type = "item", name = "igor-solar-panel", amount=1}}
+    results = {{type = "item", name = "igor-solar-panel", amount=1}},
+	allow_productivity = true
   },
   {
     type = "recipe",
@@ -329,7 +330,8 @@ data:extend({
       {type = "item", name = "igor-solar-panel", amount = 3},
 	  {type = "item", name = "processing-unit", amount = 32}
     },
-    results = {{type = "item", name = "igor-solar-panel-2", amount=1}}
+    results = {{type = "item", name = "igor-solar-panel-2", amount=1}},
+	allow_productivity = true
   },
   {
     type = "recipe",
@@ -342,6 +344,7 @@ data:extend({
 	  {type = "item", name = "uranium-235", amount = 24},
 	  {type = "item", name = "productivity-module-3", amount = 3}
     },
-    results = {{type = "item", name = "igor-solar-panel-3", amount=1}}
+    results = {{type = "item", name = "igor-solar-panel-3", amount=1}},
+	allow_productivity = true
   },
 })

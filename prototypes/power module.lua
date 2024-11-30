@@ -90,7 +90,8 @@ data:extend({
       {type = "item", name = "efficiency-module", amount = 5}
     },
     energy_required = 15,
-    results = {{type="item", name="power-module", amount=1}}
+    results = {{type="item", name="power-module", amount=1}},
+	allow_productivity = true
   },
   {
     type = "recipe",
@@ -104,7 +105,8 @@ data:extend({
       {type = "item", name = "efficiency-module-2", amount = 5}
     },
     energy_required = 30,
-    results = {{type="item", name="power-module-2", amount=1}}
+    results = {{type="item", name="power-module-2", amount=1}},
+	allow_productivity = true
   },
   {
     type = "recipe",
@@ -118,7 +120,8 @@ data:extend({
       {type = "item", name = "efficiency-module-3", amount = 5}
     },
     energy_required = 60,
-    results = {{type="item", name="power-module-3", amount=1}}
+    results = {{type="item", name="power-module-3", amount=1}},
+	allow_productivity = true
   },
   {
     type = "technology",
