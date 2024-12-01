@@ -285,6 +285,7 @@ data:extend({
     subgroup = "energy",
     order = "d[solar-panel]-a[solar-panel]",
     place_result = "igor-solar-panel",
+	weight = 20 * kg,
     stack_size = 200
   },
   {
@@ -295,6 +296,7 @@ data:extend({
     subgroup = "energy",
     order = "d[solar-panel]-a[solar-panel]",
     place_result = "igor-solar-panel-2",
+	weight = 20 * kg,
     stack_size = 200
   },
   {
@@ -305,6 +307,7 @@ data:extend({
     subgroup = "energy",
     order = "d[solar-panel]-a[solar-panel]",
     place_result = "igor-solar-panel-3",
+	weight = 20 * kg,
     stack_size = 200
   },
   {
