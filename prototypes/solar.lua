@@ -50,60 +50,19 @@ data:extend({
         {
           filename = "__base__/graphics/entity/solar-panel/solar-panel.png",
           priority = "high",
-          width = 116,
-          height = 112,
-          shift = util.by_pixel(-3, 3),
+          width = 230,
+          height = 224,
+		  scale = 0.36,
           hr_version =
           {
             filename = "__base__/graphics/entity/solar-panel/hr-solar-panel.png",
             priority = "high",
             width = 230,
             height = 224,
-            shift = util.by_pixel(-3, 3.5),
-            scale = 0.5
+		    scale = 0.36
           }
         },
-        {
-          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
-          priority = "high",
-          width = 112,
-          height = 90,
-          shift = util.by_pixel(10, 6),
-          draw_as_shadow = true,
-          hr_version =
-          {
-            filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
-            priority = "high",
-            width = 220,
-            height = 180,
-            shift = util.by_pixel(9.5, 6),
-            draw_as_shadow = true,
-            scale = 0.5
-          }
-        }
-      }
-    },
-    overlay =
-    {
-      layers =
-      {
-        {
-          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow-overlay.png",
-          priority = "high",
-          width = 108,
-          height = 90,
-          shift = util.by_pixel(11, 6),
-          hr_version =
-          {
-            filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow-overlay.png",
-            priority = "high",
-            width = 214,
-            height = 180,
-            shift = util.by_pixel(10.5, 6),
-            scale = 0.5
-          }
-        }
-      }
+      },
     },
     vehicle_impact_sound = sounds.generic_impact,
   },
@@ -117,8 +76,8 @@ data:extend({
     max_health = 200,
     corpse = "solar-panel-remnants",
     dying_explosion = "solar-panel-explosion",
-    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
+    selection_box = {{-0.8, -1}, {0.8, 1}},
     damaged_trigger_effect = hit_effects.entity(),
 	energy_source = {
       type = "electric",
@@ -135,60 +94,19 @@ data:extend({
         {
           filename = "__base__/graphics/entity/solar-panel/solar-panel.png",
           priority = "high",
-          width = 116,
-          height = 112,
-          shift = util.by_pixel(-3, 3),
+          width = 230,
+          height = 224,
+		  scale = 0.36,
           hr_version =
           {
             filename = "__base__/graphics/entity/solar-panel/hr-solar-panel.png",
             priority = "high",
             width = 230,
             height = 224,
-            shift = util.by_pixel(-3, 3.5),
-            scale = 0.5
+		    scale = 0.36
           }
         },
-        {
-          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
-          priority = "high",
-          width = 112,
-          height = 90,
-          shift = util.by_pixel(10, 6),
-          draw_as_shadow = true,
-          hr_version =
-          {
-            filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
-            priority = "high",
-            width = 220,
-            height = 180,
-            shift = util.by_pixel(9.5, 6),
-            draw_as_shadow = true,
-            scale = 0.5
-          }
-        }
-      }
-    },
-    overlay =
-    {
-      layers =
-      {
-        {
-          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow-overlay.png",
-          priority = "high",
-          width = 108,
-          height = 90,
-          shift = util.by_pixel(11, 6),
-          hr_version =
-          {
-            filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow-overlay.png",
-            priority = "high",
-            width = 214,
-            height = 180,
-            shift = util.by_pixel(10.5, 6),
-            scale = 0.5
-          }
-        }
-      }
+      },
     },
     vehicle_impact_sound = sounds.generic_impact,
   },
@@ -202,8 +120,8 @@ data:extend({
     max_health = 200,
     corpse = "solar-panel-remnants",
     dying_explosion = "solar-panel-explosion",
-    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
+    selection_box = {{-0.8, -1}, {0.8, 1}},
     damaged_trigger_effect = hit_effects.entity(),
 	energy_source = {
       type = "electric",
@@ -220,59 +138,18 @@ data:extend({
         {
           filename = "__base__/graphics/entity/solar-panel/solar-panel.png",
           priority = "high",
-          width = 116,
-          height = 112,
-          shift = util.by_pixel(-3, 3),
+          width = 230,
+          height = 224,
+		  scale = 0.36,
           hr_version =
           {
             filename = "__base__/graphics/entity/solar-panel/hr-solar-panel.png",
             priority = "high",
             width = 230,
             height = 224,
-            shift = util.by_pixel(-3, 3.5),
-            scale = 0.5
+		    scale = 0.36
           }
         },
-        {
-          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
-          priority = "high",
-          width = 112,
-          height = 90,
-          shift = util.by_pixel(10, 6),
-          draw_as_shadow = true,
-          hr_version =
-          {
-            filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
-            priority = "high",
-            width = 220,
-            height = 180,
-            shift = util.by_pixel(9.5, 6),
-            draw_as_shadow = true,
-            scale = 0.5
-          }
-        }
-      }
-    },
-    overlay =
-    {
-      layers =
-      {
-        {
-          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow-overlay.png",
-          priority = "high",
-          width = 108,
-          height = 90,
-          shift = util.by_pixel(11, 6),
-          hr_version =
-          {
-            filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow-overlay.png",
-            priority = "high",
-            width = 214,
-            height = 180,
-            shift = util.by_pixel(10.5, 6),
-            scale = 0.5
-          }
-        }
       }
     },
     vehicle_impact_sound = sounds.generic_impact,

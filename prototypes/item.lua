@@ -29,6 +29,8 @@ data.raw["assembling-machine"]["oil-refinery"].module_slots = 4
 data.raw["assembling-machine"]["chemical-plant"].module_slots = 4
 data.raw["assembling-machine"]["centrifuge"].module_slots = 4
 data.raw["assembling-machine"]["crusher"].module_slots = 4
+data.raw["mining-drill"]["pumpjack"].module_slots = 4
+
 data.raw["transport-belt"]["transport-belt"].speed = 0.05
 data.raw["transport-belt"]["fast-transport-belt"].speed = 0.125
 data.raw["transport-belt"]["express-transport-belt"].speed = 0.25
@@ -62,7 +64,7 @@ data.raw["pipe-to-ground"]["pipe-to-ground"]["fluid_box"].pipe_connections =
       }
 data.raw["recipe"]["pipe-to-ground"].ingredients =
     {
-      {type = "item", name = "pipe", amount = 32},
+      {type = "item", name = "pipe", amount = 16},
       {type = "item", name = "iron-plate", amount = 10}
     }
 
@@ -121,3 +123,5 @@ data.raw["roboport"]["roboport"].charging_offsets =
     }
 
 data.raw["storage-tank"]["storage-tank"]["fluid_box"].base_area = 500
+
+data.raw["belt-immunity-equipment"]["belt-immunity-equipment"].energy_consumption = "1kW"
