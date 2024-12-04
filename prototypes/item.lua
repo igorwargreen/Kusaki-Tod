@@ -70,19 +70,13 @@ data.raw["recipe"]["pipe-to-ground"].ingredients =
 
 data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 4.5
 data.raw["electric-pole"]["substation"].supply_area_distance = 32
-data.raw["electric-pole"]["substation"].maximum_wire_distance = 32
+data.raw["electric-pole"]["substation"].maximum_wire_distance = 64
 data.raw["electric-pole"]["substation"].ingredients =
     {
       {type = "item", name = "steel-plate", amount = 40},
       {type = "item", name = "advanced-circuit", amount = 20},
       {type = "item", name = "copper-cable", amount = 60}
     }
-
-data.raw["ammo"]["ammo-nano-constructors"].magazine_size = 32
-data.raw["ammo"]["ammo-nano-termites"].magazine_size = 32
-data.raw["ammo"]["uranium-rounds-magazine"].magazine_size = 32
-data.raw["ammo"]["firearm-magazine"].magazine_size = 32
-data.raw["ammo"]["piercing-rounds-magazine"].magazine_size = 32
 
 data.raw["roboport"]["roboport"].energy_source =
 	{
