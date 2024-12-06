@@ -125,3 +125,10 @@ data.raw["quality"]["legendary"].level = 8
 
 data.raw["furnace"]["recycler"].allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
 data.raw["recipe"]["scrap-recycling"].allow_productivity = true
+
+data.raw["recipe"]["automation-science-pack"].energy_required = 15
+data.raw["recipe"]["logistic-science-pack"].energy_required = 15
+data.raw["recipe"]["chemical-science-pack"].energy_required = 15
+data.raw["recipe"]["military-science-pack"].energy_required = 15
+data.raw["recipe"]["production-science-pack"].energy_required = 15
+data.raw["recipe"]["utility-science-pack"].energy_required = 15
