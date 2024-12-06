@@ -123,4 +123,5 @@ data.raw["belt-immunity-equipment"]["belt-immunity-equipment"].energy_consumptio
 data.raw["quality"]["epic"].level = 4
 data.raw["quality"]["legendary"].level = 8
 
+data.raw["furnace"]["recycler"].allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
 data.raw["recipe"]["scrap-recycling"].allow_productivity = true
