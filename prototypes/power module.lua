@@ -1,23 +1,3 @@
-data.raw["technology"]["solar-energy"].effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "solar-panel"
-      },
-	  {
-        type = "unlock-recipe",
-        recipe = "igor-solar-panel"
-      },
-	  {
-        type = "unlock-recipe",
-        recipe = "igor-solar-panel-2"
-      },
-	  {
-        type = "unlock-recipe",
-        recipe = "igor-solar-panel-3"
-      }
-    }
-
 data:extend({
 {
     type = "module",
@@ -89,7 +69,7 @@ data:extend({
       {type = "item", name = "speed-module", amount = 5},
       {type = "item", name = "efficiency-module", amount = 5}
     },
-    energy_required = 15,
+    energy_required = 60,
     results = {{type="item", name="power-module", amount=1}},
 	allow_productivity = true
   },
@@ -99,12 +79,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "power-module", amount = 5},
+      {type = "item", name = "power-module", amount = 1},
       {type = "item", name = "productivity-module-2", amount = 5},
       {type = "item", name = "speed-module-2", amount = 5},
       {type = "item", name = "efficiency-module-2", amount = 5}
     },
-    energy_required = 30,
+    energy_required = 60,
     results = {{type="item", name="power-module-2", amount=1}},
 	allow_productivity = true
   },
@@ -114,7 +94,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "power-module-2", amount = 5},
+      {type = "item", name = "power-module-2", amount = 1},
       {type = "item", name = "productivity-module-3", amount = 5},
       {type = "item", name = "speed-module-3", amount = 5},
       {type = "item", name = "efficiency-module-3", amount = 5}
@@ -205,3 +185,9 @@ data:extend({
     order = "i-e-c"
   },
 })
+data.raw.recipe["power-module"].category = "electronics"
+data.raw.recipe["power-module-2"].category = "electronics"
+data.raw.recipe["power-module-3"].category = "electronics"
+for _, recipe in pairs(data.raw["recipe"]) do
+  data.raw["recipe"][recipe.name].maximum_productivity = 1000
+end

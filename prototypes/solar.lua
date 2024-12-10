@@ -204,7 +204,7 @@ data:extend({
     type = "recipe",
     name = "igor-solar-panel-2",
     energy_required = 30,
---    enabled = false,
+    enabled = false,
     ingredients =
     {
       {type = "item", name = "igor-solar-panel", amount = 3},
@@ -217,7 +217,7 @@ data:extend({
     type = "recipe",
     name = "igor-solar-panel-3",
     energy_required = 30,
---    enabled = false,
+    enabled = false,
     ingredients =
     {
       {type = "item", name = "igor-solar-panel-2", amount = 3},

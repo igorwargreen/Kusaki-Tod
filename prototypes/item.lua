@@ -30,6 +30,9 @@ data.raw["assembling-machine"]["chemical-plant"].module_slots = 4
 data.raw["assembling-machine"]["centrifuge"].module_slots = 4
 data.raw["assembling-machine"]["crusher"].module_slots = 4
 data.raw["mining-drill"]["pumpjack"].module_slots = 4
+data.raw["assembling-machine"]["electromagnetic-plant"].module_slots = 8
+data.raw["assembling-machine"]["foundry"].module_slots = 8
+data.raw["lab"]["biolab"].module_slots = 8
 
 data.raw["transport-belt"]["transport-belt"].speed = 0.05
 data.raw["transport-belt"]["fast-transport-belt"].speed = 0.125
@@ -78,57 +81,22 @@ data.raw["electric-pole"]["substation"].ingredients =
       {type = "item", name = "copper-cable", amount = 60}
     }
 
-data.raw["roboport"]["roboport"].energy_source =
-	{
-      type = "electric",
-      usage_priority = "secondary-input",
-      input_flow_limit = "100MW",
-      buffer_capacity = "1GJ",
-    }
-data.raw["roboport"]["roboport"].recharge_minimum = "50MJ"
-data.raw["roboport"]["roboport"].energy_usage = "1MW"
-data.raw["roboport"]["roboport"].charging_energy = "5MW"
 data.raw["roboport"]["roboport"].logistics_radius = 75
 data.raw["roboport"]["roboport"].construction_radius = 75
-data.raw["roboport"]["roboport"].charge_approach_distance = 5
-data.raw["roboport"]["roboport"].spawn_and_station_height = 0
-data.raw["roboport"]["roboport"].charging_offsets = 
-	{
-      { -0.5, -3.3 },
-      { -1.7, -3.0 },
-      { -2.5, -2.4 },
-      { -3.1, -1.6 },
-      { -3.4, -0.6 },
-      { 0.5, -3.3 },
-      { 1.7, -3.0 },
-      { 2.5, -2.4 },
-      { 3.1, -1.6 },
-      { 3.4, -0.6 },
-      { 0.5, 3.1 },
-      { 1.7, 2.8 },
-      { 2.5, 2.2 },
-      { 3.1, 1.5 },
-      { 3.4, 0.4 },
-      { -0.5, 3.1 },
-      { -1.7, 2.8 },
-      { -2.5, 2.2 },
-      { -3.1, 1.5 },
-      { -3.4, 0.4 },
-    }
+
 
 data.raw["storage-tank"]["storage-tank"]["fluid_box"].base_area = 500
 
 data.raw["belt-immunity-equipment"]["belt-immunity-equipment"].energy_consumption = "1kW"
 
-data.raw["quality"]["epic"].level = 4
-data.raw["quality"]["legendary"].level = 8
 
-data.raw["furnace"]["recycler"].allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
-data.raw["recipe"]["scrap-recycling"].allow_productivity = true
 
-data.raw["recipe"]["automation-science-pack"].energy_required = 15
-data.raw["recipe"]["logistic-science-pack"].energy_required = 15
-data.raw["recipe"]["chemical-science-pack"].energy_required = 15
-data.raw["recipe"]["military-science-pack"].energy_required = 15
-data.raw["recipe"]["production-science-pack"].energy_required = 15
-data.raw["recipe"]["utility-science-pack"].energy_required = 15
+--data.raw["furnace"]["recycler"].allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
+--data.raw["recipe"]["scrap-recycling"].allow_productivity = true
+
+data.raw["recipe"]["automation-science-pack"].energy_required = 10
+data.raw["recipe"]["logistic-science-pack"].energy_required = 10
+data.raw["recipe"]["chemical-science-pack"].energy_required = 10
+data.raw["recipe"]["military-science-pack"].energy_required = 10
+data.raw["recipe"]["production-science-pack"].energy_required = 10
+data.raw["recipe"]["utility-science-pack"].energy_required = 10

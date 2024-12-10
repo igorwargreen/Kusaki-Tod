@@ -8,9 +8,9 @@ data.raw["construction-robot"]["construction-robot"].min_to_charge = 0
 data.raw["construction-robot"]["construction-robot"].max_to_charge = 0
 data.raw["recipe"]["construction-robot"].ingredients =
     {
-      {type = "item", name = "flying-robot-frame", amount = 4},
-	  {type = "item", name = "igor-solar-panel-2", amount = 1},
-      {type = "item", name = "electronic-circuit", amount = 2}
+      {type = "item", name = "flying-robot-frame", amount = 10},
+	  {type = "item", name = "solar-panel", amount = 50},
+      {type = "item", name = "processing-unit", amount = 10}
     }
 
 data.raw["logistic-robot"]["logistic-robot"].speed = 0.15
@@ -23,7 +23,7 @@ data.raw["logistic-robot"]["logistic-robot"].min_to_charge = 0
 data.raw["logistic-robot"]["logistic-robot"].max_to_charge = 0
 data.raw["recipe"]["logistic-robot"].ingredients =
     {
-      {type = "item", name = "flying-robot-frame", amount = 4},
-	  {type = "item", name = "igor-solar-panel-2", amount = 1},
-      {type = "item", name = "advanced-circuit", amount = 2}
+      {type = "item", name = "flying-robot-frame", amount = 10},
+	  {type = "item", name = "solar-panel", amount = 50},
+      {type = "item", name = "processing-unit", amount = 10}
     }
