@@ -46,20 +46,20 @@ data:extend({
     },
     collision_box = {{-1.25, -1.25}, {1.25, 1.25}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
---    drawing_box_vertical_extension = 1,
+    drawing_box_vertical_extension = 1,
 
-	integration_patch  =
+	placeable_position_visualization  =
     {
-      sheets =
+      layers =
       {
         {
           filename = "__Kusaki-Tod__/graphics/heating-energy-station.png",
           priority = "high",
           width = 214,
 		  height = 320,
---		  scale = 0.5,
---		  shift = util.by_pixel( -1.0, -22.5),
---		  line_length = 1,
+		  scale = 0.5,
+		  shift = util.by_pixel( -1.0, -22.5),
+		  line_length = 1,
         },
       },
     },
