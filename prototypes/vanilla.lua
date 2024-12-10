@@ -1,3 +1,5 @@
+require ("util")
+
 for _, tool in pairs(data.raw["tool"]) do
   data.raw["tool"][tool.name].spoil_ticks = 0
 end
@@ -10,6 +12,21 @@ end
 
 data.raw["item"]["steam-engine"].place_result = ""
 data.raw["item"]["boiler"].place_result = ""
+
+local burner_picture =
+{
+  layers =
+  {
+    {
+      filename = "__Kusaki-Tod__/graphics/heating-energy-station.png",
+      width = 214,
+	  height = 320,
+      scale = 0.5,
+	  shift = util.by_pixel( -1.0, -22.5),
+	  line_length = 1,
+    },
+  }
+}
 
 
 data:extend({
@@ -48,21 +65,7 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     drawing_box_vertical_extension = 1,
 
-	placeable_position_visualization  =
-    {
-      layers =
-      {
-        {
-          filename = "__Kusaki-Tod__/graphics/heating-energy-station.png",
-          priority = "high",
-          width = 214,
-		  height = 320,
-		  scale = 0.5,
-		  shift = util.by_pixel( -1.0, -22.5),
-		  line_length = 1,
-        },
-      },
-    },
+	animation = burner_picture,
   },
   {
     type = "item",
