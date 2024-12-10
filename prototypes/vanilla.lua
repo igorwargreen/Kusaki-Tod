@@ -1,20 +1,3 @@
-require ("sound-util")
-require ("circuit-connector-sprites")
-require ("util")
-require ("__space-age__.prototypes.entity.circuit-network")
-require ("__space-age__.prototypes.entity.space-platform-hub-cockpit")
-
-local item_sounds = require("__base__.prototypes.item_sounds")
-local item_tints = require("__base__.prototypes.item-tints")
-local simulations = require("__base__.prototypes.factoriopedia-simulations")
-
-local sounds = require("__base__.prototypes.entity.sounds")
-local space_age_sounds = require ("__space-age__.prototypes.entity.sounds")
-local meld = require("meld")
-local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
-local procession_graphic_catalogue_types = require("__base__/prototypes/planet/procession-graphic-catalogue-types")
-
-
 for _, tool in pairs(data.raw["tool"]) do
   data.raw["tool"][tool.name].spoil_ticks = 0
 end
@@ -65,9 +48,9 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 --    drawing_box_vertical_extension = 1,
 
-	picture =
+	integration_patch  =
     {
-      layers =
+      sheets =
       {
         {
           filename = "__Kusaki-Tod__/graphics/heating-energy-station.png",
@@ -87,9 +70,6 @@ data:extend({
     icon = "__space-age__/graphics/icons/heating-tower.png",
     subgroup = "environmental-protection",
     order = "c[heating-tower]",
-    inventory_move_sound = item_sounds.steam_inventory_move,
-    pick_sound = item_sounds.steam_inventory_pickup,
-    drop_sound = item_sounds.steam_inventory_move,
     place_result = "heating-energy-station",
     stack_size = 200,
     weight = 100*kg
