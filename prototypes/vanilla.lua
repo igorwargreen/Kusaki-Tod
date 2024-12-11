@@ -77,4 +77,16 @@ data:extend({
     stack_size = 200,
     weight = 100*kg
   },
+  {
+    type = "tool",
+    name = "based-science-pack",
+    localised_description = {"item-description.science-pack"},
+    icon = "__base__/graphics/icons/space-science-pack.png",
+    subgroup = "science-pack",
+    color_hint = { text = "A" },
+    order = "a[space-science-pack]",
+    stack_size = 200,
+    weight = 1 * kg,
+    durability = 1
+  },
 })

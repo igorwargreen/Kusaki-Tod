@@ -54,6 +54,28 @@ data:extend({
     results = {{type = "item", name = "calcite", amount = 1}},
     allow_productivity = true
   },
+  {
+    type = "recipe",
+    name = "based-science-pack",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "automation-science-pack", amount = 1},
+      {type = "item", name = "logistic-science-pack", amount = 1},
+      {type = "item", name = "chemical-science-pack", amount = 1},
+      {type = "item", name = "military-science-pack", amount = 1},
+      {type = "item", name = "utility-science-pack", amount = 1},
+      {type = "item", name = "space-science-pack", amount = 1}
+    },
+    results = {{type="item", name="based-science-pack", amount=1}},
+    crafting_machine_tint =
+    {
+      primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+      secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+    },
+    allow_productivity = true
+  },
 })
 
 

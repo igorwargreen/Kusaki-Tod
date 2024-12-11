@@ -91,8 +91,8 @@ data.raw["belt-immunity-equipment"]["belt-immunity-equipment"].energy_consumptio
 
 
 
---data.raw["furnace"]["recycler"].allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
---data.raw["recipe"]["scrap-recycling"].allow_productivity = true
+data.raw["furnace"]["recycler"].allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
+data.raw["recipe"]["scrap-recycling"].allow_productivity = true
 
 data.raw["recipe"]["automation-science-pack"].energy_required = 10
 data.raw["recipe"]["logistic-science-pack"].energy_required = 10
