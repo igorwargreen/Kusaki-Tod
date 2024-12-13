@@ -105,3 +105,77 @@ data.raw["recipe"]["ammo-nano-constructors"].ingredients =
       {type = "item", name = "electronic-circuit", amount = 1},
       {type = "item", name = "repair-pack", amount = 1}
     }
+data.raw["electric-turret"]["tesla-turret"].max_health = 3000
+data.raw["electric-turret"]["tesla-turret"].call_for_help_radius = 70
+data.raw["electric-turret"]["tesla-turret"].attack_parameters =
+    {
+      type = "beam",
+      cooldown = 60,
+      range = 60,
+      range_mode = "center-to-bounding-box",
+      fire_penalty = 0.9,
+      source_direction_count = 64,
+      source_offset = {0, -0.55},
+      ammo_category = "tesla",
+      ammo_type =
+      {
+        energy_consumption = "12MJ",
+        action =
+        {
+          type = "direct",
+          action_delivery =
+          {
+            type = "instant",
+            target_effects =
+            {
+              -- Chain effect must go first in case the beam kills the target
+              {
+                type = "nested-result",
+                action =
+                {
+                  type = "direct",
+                  action_delivery =
+                  {
+                    type = "chain",
+                    chain = "chain-tesla-turret-chain",
+                  }
+                }
+              },
+              {
+                type = "nested-result",
+                action =
+                {
+                  type = "direct",
+                  action_delivery =
+                  {
+                    type = "beam",
+                    beam = "chain-tesla-turret-beam-start",
+                    max_length = 40,
+                    duration = 30,
+                    add_to_shooter = false,
+                    destroy_with_source_or_target = false,
+                    source_offset = {0, -2.6}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+data.raw["electric-turret"]["tesla-turret"].energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "48MJ",
+      input_flow_limit = "12MW",
+      drain = "2MW",
+      usage_priority = "primary-input"
+    }
+data.raw["recipe"]["tesla-turret"].ingredients =
+    {
+      {type = "item", name = "teslagun", amount = 4},
+      {type = "item", name = "supercapacitor", amount = 50},
+      {type = "item", name = "processing-unit", amount = 100},
+      {type = "item", name = "superconductor", amount = 100},
+      {type = "fluid", name = "electrolyte", amount = 500},
+    }

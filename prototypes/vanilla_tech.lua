@@ -234,17 +234,17 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
       {
         type = "ammo-damage",
         ammo_category = "bullet",
-        modifier = 0.25
+        modifier = 0.4
       },
       {
         type = "turret-attack",
         turret_id = "gun-turret",
-        modifier = 0.25
+        modifier = 0.4
       },
       {
         type = "ammo-damage",
         ammo_category = "shotgun-shell",
-        modifier = 0.25
+        modifier = 0.4
       }
     }
 data.raw["technology"]["physical-projectile-damage-5"].effects =
@@ -252,22 +252,22 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
       {
         type = "ammo-damage",
         ammo_category = "bullet",
-        modifier = 0.25
+        modifier = 0.5
       },
       {
         type = "turret-attack",
         turret_id = "gun-turret",
-        modifier = 0.25
+        modifier = 0.5
       },
       {
         type = "ammo-damage",
         ammo_category = "shotgun-shell",
-        modifier = 0.25
+        modifier = 0.5
       },
 	  {
         type = "ammo-damage",
         ammo_category = "cannon-shell",
-        modifier = 1
+        modifier = 1.5
       }
     }
 data.raw["technology"]["physical-projectile-damage-6"].effects =
@@ -334,16 +334,212 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
         type = "gun-speed",
         ammo_category = "rocket",
         modifier = 0.5
+      },
+	  {
+        type = "ammo-damage",
+        ammo_category = "rocket",
+        modifier = 0.5
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "grenade",
+        modifier = 0.2
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "landmine",
+        modifier = 0.2
       }
     }
 data.raw["technology"]["physical-projectile-damage-7"].unit =
     {
-      count_formula = "2^(L-7)*1000",
+      count_formula = "1.3^(L-7)*1000",
       ingredients =
       {
-        {"based-science-pack", 1}
+        {"based-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"promethium-science-pack", 1}
       },
       time = 60
+    }
+data.raw["technology"]["electric-weapons-damage-1"].unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["electric-weapons-damage-2"].unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["electric-weapons-damage-3"].unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["electric-weapons-damage-4"].unit =
+    {
+      count_formula = "1.2^(L-3)*1000",
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"promethium-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["electric-weapons-damage-1"].effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "tesla",
+        modifier = 0.5
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.5
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.5
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "tesla",
+        modifier = 0.2
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "electric",
+        modifier = 0.2
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "beam",
+        modifier = 0.2
+      }
+    }
+data.raw["technology"]["electric-weapons-damage-2"].effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "tesla",
+        modifier = 0.75
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.75
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.75
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "tesla",
+        modifier = 0.2
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "electric",
+        modifier = 0.2
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "beam",
+        modifier = 0.2
+      }
+    }
+data.raw["technology"]["electric-weapons-damage-3"].effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "tesla",
+        modifier = 1
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 1
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 1
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "tesla",
+        modifier = 0.2
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "electric",
+        modifier = 0.2
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "beam",
+        modifier = 0.2
+      }
+    }
+data.raw["technology"]["electric-weapons-damage-4"].effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "tesla",
+        modifier = 1
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 1
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 1
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "tesla",
+        modifier = 0.2
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "electric",
+        modifier = 0.2
+      },
+	  {
+        type = "gun-speed",
+        ammo_category = "beam",
+        modifier = 0.2
+      }
     }
 data.raw.technology["space-science-pack"].effects =
 {
@@ -400,31 +596,122 @@ data.raw["technology"]["railgun-damage-1"].effects =
         modifier = 1
       }
     }
-data.raw["technology"]["artillery-shell-damage-1"].enabled = false
-data.raw["technology"]["railgun-shooting-speed-1"].enabled = false
-data.raw["technology"]["artillery-shell-speed-1"].enabled = false
-data.raw["technology"]["artillery-shell-range-1"].enabled = false
-data.raw["technology"]["quality-module"].enabled = false
-data.raw["technology"]["quality-module-2"].enabled = false
-data.raw["technology"]["quality-module-3"].enabled = false
-data.raw["technology"]["epic-quality"].enabled = false
-data.raw["technology"]["legendary-quality"].enabled = false
-data.raw["technology"]["fusion-reactor-equipment"].enabled = false
-data.raw["technology"]["fission-reactor-equipment"].enabled = false
-data.raw["technology"]["spidertron"].enabled = false
-data.raw["technology"]["toolbelt-equipment"].enabled = false
-data.raw["technology"]["tree-seeding"].enabled = false
-data.raw["technology"]["fish-breeding"].enabled = false
-data.raw["technology"]["battery-mk3-equipment"].enabled = false
-data.raw["technology"]["battery-mk2-equipment"].enabled = false
-data.raw["technology"]["energy-shield-mk2-equipment"].enabled = false
-data.raw["technology"]["battery-equipment"].enabled = false
-data.raw["technology"]["cliff-explosives"].enabled = false
-data.raw["technology"]["asteroid-reprocessing"].enabled = false
-data.raw["technology"]["health"].enabled = false
-data.raw["technology"]["personal-roboport-mk2-equipment"].enabled = false
-data.raw["technology"]["low-density-structure-productivity"].enabled = false
-data.raw["technology"]["rocket-fuel-productivity"].enabled = false
+data.raw["technology"]["mining-productivity-1"].effects =
+    {
+      {
+        type = "mining-drill-productivity-bonus",
+        modifier = 0.5
+      }
+    }
+data.raw["technology"]["mining-productivity-2"].effects =
+    {
+      {
+        type = "mining-drill-productivity-bonus",
+        modifier = 0.5
+      }
+    }
+data.raw["technology"]["mining-productivity-3"].effects =
+    {
+      {
+        type = "mining-drill-productivity-bonus",
+        modifier = 0.5
+      }
+    }
+data.raw["technology"]["mining-productivity-1"].unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["mining-productivity-2"].unit =
+    {
+      count = 2500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"production-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["mining-productivity-3"].unit =
+    {
+      count_formula = "5000*(L - 2)",
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"promethium-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["artillery-shell-damage-1"] = nil
+data.raw["technology"]["stronger-explosives-7"] = nil
+data.raw["technology"]["stronger-explosives-6"] = nil
+data.raw["technology"]["stronger-explosives-5"] = nil
+data.raw["technology"]["railgun-shooting-speed-1"] = nil
+data.raw["technology"]["artillery-shell-speed-1"] = nil
+data.raw["technology"]["artillery-shell-range-1"] = nil
+data.raw["technology"]["quality-module"] = nil
+data.raw["technology"]["quality-module-2"] = nil
+data.raw["technology"]["quality-module-3"] = nil
+data.raw["technology"]["epic-quality"] = nil
+data.raw["technology"]["legendary-quality"] = nil
+data.raw["technology"]["fusion-reactor-equipment"] = nil
+--data.raw["technology"]["fission-reactor-equipment"] = nil
+--data.raw["technology"]["spidertron"] = nil
+data.raw["technology"]["toolbelt-equipment"] = nil
+data.raw["technology"]["tree-seeding"] = nil
+data.raw["technology"]["fish-breeding"] = nil
+data.raw["technology"]["battery-mk3-equipment"] = nil
+data.raw["technology"]["battery-mk2-equipment"] = nil
+data.raw["technology"]["energy-shield-mk2-equipment"] = nil
+data.raw["technology"]["battery-equipment"] = nil
+data.raw["technology"]["cliff-explosives"] = nil
+--data.raw["technology"]["asteroid-reprocessing"] = nil
+data.raw["technology"]["health"] = nil
+data.raw["technology"]["personal-roboport-mk2-equipment"] = nil
+data.raw["technology"]["low-density-structure-productivity"] = nil
+data.raw["technology"]["rocket-fuel-productivity"] = nil
+data.raw["technology"]["follower-robot-count-1"] = nil
+data.raw["technology"]["follower-robot-count-2"] = nil
+data.raw["technology"]["follower-robot-count-3"] = nil
+data.raw["technology"]["follower-robot-count-4"] = nil
+data.raw["technology"]["follower-robot-count-5"] = nil
+data.raw["technology"]["defender"] = nil
+data.raw["technology"]["distractor"] = nil
+data.raw["technology"]["destroyer"] = nil
+data.raw["technology"]["laser-weapons-damage-1"] = nil
+data.raw["technology"]["laser-weapons-damage-2"] = nil
+data.raw["technology"]["laser-weapons-damage-3"] = nil
+data.raw["technology"]["laser-weapons-damage-4"] = nil
+data.raw["technology"]["laser-weapons-damage-5"] = nil
+data.raw["technology"]["laser-weapons-damage-6"] = nil
+data.raw["technology"]["laser-weapons-damage-7"] = nil
+data.raw["technology"]["laser-shooting-speed-1"] = nil
+data.raw["technology"]["laser-shooting-speed-2"] = nil
+data.raw["technology"]["laser-shooting-speed-3"] = nil
+data.raw["technology"]["laser-shooting-speed-4"] = nil
+data.raw["technology"]["laser-shooting-speed-5"] = nil
+data.raw["technology"]["laser-shooting-speed-6"] = nil
+data.raw["technology"]["laser-shooting-speed-7"] = nil
+data.raw["technology"]["laser"] = nil
+data.raw["technology"]["laser-turret"] = nil
+data.raw["technology"]["personal-laser-defense-equipment"] = nil
+--data.raw["technology"]["discharge-defense-equipment"] = nil
+data.raw["technology"]["land-mine"] = nil
+data.raw["technology"]["effect-transmission"] = nil
+data.raw["technology"]["discharge-defense-equipment"].prerequisites = {"military-4"}
+data.raw["technology"]["electric-weapons-damage-1"].prerequisites = {"tesla-weapons"}
+data.raw["technology"]["electric-weapons-damage-3"].prerequisites = {"electric-weapons-damage-2"}
 data.raw["technology"]["atomic-bomb"].unit =
     {
       count = 5000,
