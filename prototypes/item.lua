@@ -74,7 +74,9 @@ data.raw["splitter"]["express-splitter"].speed = 0.25
 data.raw["splitter"]["turbo-splitter"].speed = 0.5
 
 data.raw["inserter"]["fast-inserter"].extension_speed = 0.2
+data.raw["inserter"]["nco-py-crane-mk1"].extension_speed = 0.2
 data.raw["inserter"]["fast-inserter"].rotation_speed = 0.08
+data.raw["inserter"]["nco-py-crane-mk1"].rotation_speed = 0.08
 data.raw["inserter"]["bulk-inserter"].extension_speed = 0.2
 data.raw["inserter"]["bulk-inserter"].rotation_speed = 0.08
 data.raw["inserter"]["stack-inserter"].extension_speed = 0.2
