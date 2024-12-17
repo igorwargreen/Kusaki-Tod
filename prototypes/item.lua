@@ -116,6 +116,8 @@ data.raw["storage-tank"]["storage-tank"]["fluid_box"].base_area = 500
 
 data.raw["belt-immunity-equipment"]["belt-immunity-equipment"].energy_consumption = "1kW"
 
+data.raw["utility-constants"]["default"].rocket_lift_weight = 20000000, -- 20 000 kg
+
 
 
 data.raw["furnace"]["recycler"].allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}

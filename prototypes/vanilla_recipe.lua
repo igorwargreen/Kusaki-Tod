@@ -78,7 +78,13 @@ data:extend({
   },
 })
 
-
+data.raw["recipe"]["rocket-part"].energy_required = 30
+data.raw["recipe"]["rocket-part"].ingredients =
+    {
+      {type = "item", name = "processing-unit", amount = 10},
+      {type = "item", name = "low-density-structure", amount = 100},
+      {type = "item", name = "rocket-fuel", amount = 100}
+    }
 data.raw["recipe"]["automation-science-pack"].ingredients =
     {
       {type = "item", name = "copper-plate", amount = 2},
