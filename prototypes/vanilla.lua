@@ -12,6 +12,19 @@ end
 
 data.raw["item"]["steam-engine"].place_result = ""
 data.raw["item"]["boiler"].place_result = ""
+data.raw["reactor"]["nuclear-reactor"] = nil
+data.raw["recipe"]["nuclear-reactor"].ingredients =
+    {
+      {type = "item", name = "steel-plate", amount = 2000},
+      {type = "item", name = "advanced-circuit", amount = 500},
+      {type = "item", name = "concrete", amount = 4000}
+    }
+data.raw["recipe"]["concrete"].ingredients =
+    {
+      {type = "item", name = "stone-brick", amount = 10},
+      {type = "item", name = "stone", amount = 10},
+      {type = "fluid", name = "water", amount = 100}
+    }
 
 local burner_picture =
 {
@@ -25,6 +38,19 @@ local burner_picture =
 	  shift = util.by_pixel( -1.0, -22.5),
 	  line_length = 1,
     },
+  }
+}
+local reactor_picture =
+{
+  layers =
+  {
+    {
+          filename = "__base__/graphics/entity/nuclear-reactor/reactor.png",
+          width = 302,
+          height = 318,
+          scale = 0.5,
+          shift = util.by_pixel(-5, -7)
+    }
   }
 }
 
@@ -76,6 +102,36 @@ data:extend({
     place_result = "heating-energy-station",
     stack_size = 200,
     weight = 100*kg
+  },
+  {
+    type = "burner-generator",
+    name = "nuclear-reactor",
+    icon  = "__base__/graphics/icons/nuclear-reactor.png",
+    flags = {"placeable-neutral", "player-creation"},
+    minable = {mining_time = 0.5, result = "nuclear-reactor"},
+	fast_replaceable_group = "reactor",
+    max_health = 500,
+	dying_explosion = "nuclear-reactor-explosion",
+--    corpse = "heating-tower-remnants",
+--    dying_explosion = "heating-tower-explosion",
+    max_power_output = "100MW",
+	energy_source =
+    {
+      type = "electric",
+	  usage_priority = "primary-output",
+    },
+    burner =
+    {
+      type = "burner",
+      fuel_categories = {"nuclear"},
+      effectivity = 1.5,
+      fuel_inventory_size = 1,
+      burnt_inventory_size = 1,
+    },
+    collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+
+	animation = reactor_picture,
   },
   {
     type = "tool",
