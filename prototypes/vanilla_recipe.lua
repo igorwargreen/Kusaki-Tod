@@ -61,12 +61,13 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {type = "item", name = "automation-science-pack", amount = 1},
-      {type = "item", name = "logistic-science-pack", amount = 1},
-      {type = "item", name = "chemical-science-pack", amount = 1},
-      {type = "item", name = "military-science-pack", amount = 1},
-      {type = "item", name = "utility-science-pack", amount = 1},
-      {type = "item", name = "space-science-pack", amount = 1}
+      {type = "item", name = "automation-science-pack", amount = 2},
+      {type = "item", name = "logistic-science-pack", amount = 2},
+      {type = "item", name = "chemical-science-pack", amount = 2},
+      {type = "item", name = "military-science-pack", amount = 2},
+      {type = "item", name = "utility-science-pack", amount = 2},
+      {type = "item", name = "production-science-pack", amount = 2},
+      {type = "item", name = "space-science-pack", amount = 2}
     },
     results = {{type="item", name="based-science-pack", amount=1}},
     crafting_machine_tint =
@@ -84,6 +85,29 @@ data.raw["recipe"]["rocket-part"].ingredients =
       {type = "item", name = "processing-unit", amount = 10},
       {type = "item", name = "low-density-structure", amount = 100},
       {type = "item", name = "rocket-fuel", amount = 100}
+    }
+data.raw["recipe"]["electromagnetic-plant"].ingredients =
+    {
+      {type = "item", name = "holmium-plate", amount = 250},
+      {type = "item", name = "steel-plate", amount = 250},
+      {type = "item", name = "processing-unit", amount = 250},
+      {type = "item", name = "refined-concrete", amount = 250}
+    }
+data.raw["recipe"]["foundry"].ingredients =
+    {
+      {type = "item", name = "tungsten-carbide", amount = 200},
+      {type = "item", name = "steel-plate", amount = 200},
+      {type = "item", name = "electronic-circuit", amount = 50},
+      {type = "item", name = "refined-concrete", amount = 100},
+      {type = "fluid", name = "lubricant", amount = 100}
+    }
+data.raw["recipe"]["big-mining-drill"].ingredients =
+    {
+      {type = "item", name = "electric-mining-drill", amount = 5},
+      {type = "fluid", name = "molten-iron", amount = 500},
+      {type = "item", name = "tungsten-carbide", amount = 50},
+      {type = "item", name = "electric-engine-unit", amount = 50},
+      {type = "item", name = "advanced-circuit", amount = 25},
     }
 data.raw["recipe"]["automation-science-pack"].ingredients =
     {
