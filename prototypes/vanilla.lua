@@ -12,6 +12,21 @@ end
 
 data.raw["item"]["steam-engine"].place_result = ""
 data.raw["item"]["boiler"].place_result = ""
+
+data.raw["accumulator"]["accumulator"].energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "100MJ",
+      usage_priority = "tertiary",
+      input_flow_limit = "5000kW",
+      output_flow_limit = "5000kW"
+    }
+data.raw["accumulator"]["accumulator"].ingredients =
+    {
+      {type = "item", name = "iron-plate", amount = 100},
+      {type = "item", name = "battery", amount = 100}
+    }
+
 data.raw["reactor"]["nuclear-reactor"] = nil
 data.raw["recipe"]["nuclear-reactor"].ingredients =
     {
