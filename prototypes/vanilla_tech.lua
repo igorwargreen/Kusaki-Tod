@@ -675,7 +675,6 @@ data.raw["technology"]["battery-mk3-equipment"] = nil
 data.raw["technology"]["battery-mk2-equipment"] = nil
 data.raw["technology"]["energy-shield-mk2-equipment"] = nil
 data.raw["technology"]["battery-equipment"] = nil
-data.raw["technology"]["cliff-explosives"] = nil
 --data.raw["technology"]["asteroid-reprocessing"] = nil
 data.raw["technology"]["health"] = nil
 data.raw["technology"]["personal-roboport-mk2-equipment"] = nil
@@ -938,6 +937,16 @@ data.raw["technology"]["worker-robots-speed-6"].unit =
       time = 60
     }
 data.raw["technology"]["asteroid-reprocessing"].unit =
+	{
+      count = 500,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"metallurgic-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["cliff-explosives"].unit =
 	{
       count = 500,
       ingredients =
