@@ -13,7 +13,13 @@ data.raw["fluid-wagon"]["fluid-wagon"].capacity = 100000
 data.raw["cargo-wagon"]["cargo-wagon"].max_speed = 2.4
 data.raw["cargo-wagon"]["cargo-wagon"].air_resistance = 0
 data.raw["cargo-wagon"]["cargo-wagon"].braking_force = 100
-data.raw["cargo-wagon"]["cargo-wagon"].inventory_size = 100
+data.raw["cargo-wagon"]["cargo-wagon"].inventory_size = 500
+data.raw["cargo-wagon"]["cargo-wagon"].ingredients =
+    {
+      {type = "item", name = "iron-gear-wheel", amount = 200},
+      {type = "item", name = "iron-plate", amount = 200},
+      {type = "item", name = "steel-plate", amount = 200}
+    }
 data.raw["artillery-wagon"]["artillery-wagon"].max_speed = 2.4
 data.raw["artillery-wagon"]["artillery-wagon"].air_resistance = 0
 data.raw["artillery-wagon"]["artillery-wagon"].braking_force = 100

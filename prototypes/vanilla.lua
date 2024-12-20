@@ -21,7 +21,7 @@ data.raw["accumulator"]["accumulator"].energy_source =
       input_flow_limit = "5000kW",
       output_flow_limit = "5000kW"
     }
-data.raw["accumulator"]["accumulator"].ingredients =
+data.raw["recipe"]["accumulator"].ingredients =
     {
       {type = "item", name = "iron-plate", amount = 100},
       {type = "item", name = "battery", amount = 100}

@@ -916,7 +916,124 @@ data.raw["technology"]["transport-belt-capacity-1"].unit =
     }
 data.raw["technology"]["transport-belt-capacity-2"].unit =
 	{
-      count = 3000,
+      count_formula = "2^(L-1)*1000",
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"promethium-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["worker-robots-speed-6"].unit =
+	{
+      count = 1000,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+      },
+      time = 60
+    }
+data.raw["technology"]["asteroid-reprocessing"].unit =
+	{
+      count = 500,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"metallurgic-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["speed-module-3"].unit =
+	{
+      count = 4000,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"metallurgic-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["aai-turbo-loader"].unit =
+	{
+      count = 1000,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"metallurgic-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["efficiency-module-3"].unit =
+	{
+      count = 2000,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"agricultural-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["productivity-module-3"].unit =
+	{
+      count = 2000,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"agricultural-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["advanced-asteroid-processing"].unit =
+	{
+      count = 5000,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"agricultural-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["spidertron"].unit =
+	{
+      count = 5000,
+      ingredients =
+      {
+        {"based-science-pack", 1},
+        {"agricultural-science-pack", 1}
+      },
+      time = 60
+    }
+data.raw["technology"]["transport-belt-capacity-1"].effects =
+    {
+      {
+        type = "belt-stack-size-bonus",
+        modifier = 3
+      }
+    }
+data.raw["technology"]["transport-belt-capacity-2"].effects =
+    {
+      {
+        type = "belt-stack-size-bonus",
+        modifier = 1
+      },
+      {
+        type = "inserter-stack-size-bonus",
+        modifier = 1
+      },
+	  {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 4
+      }
+    }
+data.raw["technology"]["transport-belt-capacity-2"].max_level = "infinite"
+data.raw["technology"]["transport-belt-capacity-2"].upgrade = true
+data.raw["technology"]["worker-robots-speed-7"].unit =
+	{
+      count_formula = "1.5^(L-6)*1000",
       ingredients =
       {
         {"based-science-pack", 1},
