@@ -13,6 +13,8 @@ end
 data.raw["item"]["steam-engine"].place_result = ""
 data.raw["item"]["boiler"].place_result = ""
 
+data.raw["ammo"]["atomic-bomb"].ammo_category = "artillery-shell"
+
 data.raw["accumulator"]["accumulator"].energy_source =
     {
       type = "electric",
