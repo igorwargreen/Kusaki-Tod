@@ -136,7 +136,7 @@ data.raw["belt-immunity-equipment"]["belt-immunity-equipment"].energy_consumptio
 
 data.raw["utility-constants"]["default"].rocket_lift_weight = 20000000 -- 20 000 kg
 
-data.raw["pump"]["pump"].pumping_speed = 200
+data.raw["pump"]["pump"].pumping_speed = 3000
 
 data.raw["resource"]["crude-oil"].minimum = 150000
 
