@@ -14,3 +14,8 @@ data.raw["electric-pole"]["substation"].maximum_wire_distance = 64
 
 data.raw["roboport"]["roboport"].logistics_radius = 75
 data.raw["roboport"]["roboport"].construction_radius = 75
+
+data.raw["character"]["character"].running_speed = 1
+data.raw["character"]["character"].build_distance = 20
+data.raw["character"]["character"].drop_item_distance = 20
+data.raw["character"]["character"].reach_distance = 20
