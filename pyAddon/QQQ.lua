@@ -35,7 +35,7 @@ data.raw["recipe"]["memory-unit"].ingredients = {
 		{type = "item", name = "iron-chest",             amount = 100}
 	}
 data.raw["recipe"]["fluid-memory-unit"].ingredients = {
-		{type = "item", name = "iron-chest",             amount = 1},
+		{type = "item", name = "memory-unit",             amount = 1},
 		{type = "item", name = "pipe",             amount = 100}
 	}
 data.raw["technology"]["memory-unit"].prerequisites = { "automation" }
