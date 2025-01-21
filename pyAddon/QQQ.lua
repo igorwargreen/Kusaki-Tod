@@ -34,7 +34,7 @@ data.raw["recipe"]["coal-gas-from-coke"].results = {
 data.raw["recipe"]["memory-unit"].ingredients = {
 		{type = "item", name = "iron-chest",             amount = 100}
 	}
-data.raw["recipe"]["fluid-memory-storage"].ingredients = {
+data.raw["recipe"]["fluid-memory-unit"].ingredients = {
 		{type = "item", name = "iron-chest",             amount = 1},
 		{type = "item", name = "pipe",             amount = 100}
 	}
