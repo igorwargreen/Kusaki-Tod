@@ -13,10 +13,9 @@ data:extend({
 	weight = 20 * kg,
     effect =
     {
-      productivity = 0.13,
-      consumption = 1,
-      pollution = 0.13,
-      speed = 0.25
+      productivity = 0.25,
+      consumption = 2,
+      speed = 0.1
     }
   },
   {
@@ -33,10 +32,9 @@ data:extend({
 	weight = 20 * kg,
     effect =
     {
-      productivity = 0.25,
-      consumption = 2,
-      pollution = 0.25,
-      speed = 0.5
+      productivity = 0.5,
+      consumption = 4,
+      speed = 0.2
     }
   },
   {
@@ -53,10 +51,9 @@ data:extend({
 	weight = 20 * kg,
     effect =
     {
-      productivity = 0.5,
-      consumption = 4,
-      pollution = 0.5,
-      speed = 1
+      productivity = 1,
+      consumption = 12,
+      speed = 0.3
     }
   },
   {
@@ -79,7 +76,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "power-module", amount = 1},
+      {type = "item", name = "power-module", amount = 5},
       {type = "item", name = "productivity-module-2", amount = 5},
       {type = "item", name = "speed-module-2", amount = 5},
       {type = "item", name = "efficiency-module-2", amount = 5}
@@ -94,7 +91,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "power-module-2", amount = 1},
+      {type = "item", name = "power-module-2", amount = 5},
       {type = "item", name = "productivity-module-3", amount = 5},
       {type = "item", name = "speed-module-3", amount = 5},
       {type = "item", name = "efficiency-module-3", amount = 5}
