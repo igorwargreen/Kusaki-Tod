@@ -81,9 +81,9 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
 	energy_source = {
       type = "electric",
-      buffer_capacity = "340kW",
+      buffer_capacity = "500kW",
       usage_priority = "primary-output",
-      output_flow_limit = "340kW",
+      output_flow_limit = "500kW",
       render_no_power_icon = false,
     },
 	energy_production = "340kW",
@@ -125,9 +125,9 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
 	energy_source = {
       type = "electric",
-      buffer_capacity = "1.2MW",
+      buffer_capacity = "2MW",
       usage_priority = "primary-output",
-      output_flow_limit = "1.2MW",
+      output_flow_limit = "2MW",
       render_no_power_icon = false,
     },
 	energy_production = "1.2MW",

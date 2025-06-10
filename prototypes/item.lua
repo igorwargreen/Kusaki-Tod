@@ -24,9 +24,9 @@ data.raw["artillery-wagon"]["artillery-wagon"].max_speed = 2.4
 data.raw["artillery-wagon"]["artillery-wagon"].air_resistance = 0
 data.raw["artillery-wagon"]["artillery-wagon"].braking_force = 100
 
-data.raw["ammo-turret"]["gun-turret"].max_health = 1000
-data.raw["ammo-turret"]["gun-turret"]["attack_parameters"].cooldown = 6
-data.raw["ammo-turret"]["gun-turret"]["attack_parameters"].range = 30
+--data.raw["ammo-turret"]["gun-turret"].max_health = 1000
+--data.raw["ammo-turret"]["gun-turret"]["attack_parameters"].cooldown = 6
+--data.raw["ammo-turret"]["gun-turret"]["attack_parameters"].range = 30
 
 data.raw["tile"]["stone-path"].walking_speed_modifier = 1.5
 
@@ -48,31 +48,7 @@ data.raw["transport-belt"]["express-transport-belt"].speed = 0.25
 data.raw["transport-belt"]["express-transport-belt"].animation_speed_coefficient = 4
 data.raw["transport-belt"]["turbo-transport-belt"].speed = 0.5
 data.raw["transport-belt"]["turbo-transport-belt"].animation_speed_coefficient = 4
-data.raw["loader-1x1"]["aai-loader"].speed = 0.05
-data.raw["loader-1x1"]["aai-fast-loader"].speed = 0.125
-data.raw["loader-1x1"]["aai-express-loader"].speed = 0.25
-data.raw["loader-1x1"]["aai-turbo-loader"].speed = 0.5
-data.raw["recipe"]["aai-loader"].ingredients =
-    {
-      {type = "item", name = "transport-belt", amount = 1},
-      {type = "item", name = "electronic-circuit", amount = 1},
-      {type = "item", name = "iron-gear-wheel", amount = 1}
-    }
-data.raw["recipe"]["aai-fast-loader"].ingredients =
-    {
-      {type = "item", name = "aai-loader", amount = 1},
-      {type = "item", name = "advanced-circuit", amount = 1}
-    }
-data.raw["recipe"]["aai-express-loader"].ingredients =
-    {
-      {type = "item", name = "aai-fast-loader", amount = 1},
-      {type = "item", name = "processing-unit", amount = 1}
-    }
-data.raw["recipe"]["aai-turbo-loader"].ingredients =
-    {
-      {type = "item", name = "aai-express-loader", amount = 1},
-      {type = "item", name = "processing-unit", amount = 5}
-    }
+
 data.raw["underground-belt"]["underground-belt"].speed = 0.05
 data.raw["underground-belt"]["underground-belt"].animation_speed_coefficient = 4
 data.raw["underground-belt"]["fast-underground-belt"].speed = 0.125
@@ -92,9 +68,7 @@ data.raw["splitter"]["turbo-splitter"].speed = 0.5
 data.raw["splitter"]["turbo-splitter"].animation_speed_coefficient = 4
 
 data.raw["inserter"]["fast-inserter"].extension_speed = 0.2
-data.raw["inserter"]["nco-py-short-crane-mk1"].extension_speed = 0.2
 data.raw["inserter"]["fast-inserter"].rotation_speed = 0.08
-data.raw["inserter"]["nco-py-short-crane-mk1"].rotation_speed = 0.08
 data.raw["inserter"]["bulk-inserter"].extension_speed = 0.2
 data.raw["inserter"]["bulk-inserter"].rotation_speed = 0.08
 data.raw["inserter"]["stack-inserter"].extension_speed = 0.2
@@ -149,11 +123,7 @@ data.raw["recipe"]["chemical-science-pack"].energy_required = 10
 data.raw["recipe"]["military-science-pack"].energy_required = 10
 data.raw["recipe"]["production-science-pack"].energy_required = 10
 data.raw["recipe"]["utility-science-pack"].energy_required = 10
-data.raw["recipe"]["ammo-nano-constructors"].ingredients =
-    {
-      {type = "item", name = "electronic-circuit", amount = 1},
-      {type = "item", name = "repair-pack", amount = 1}
-    }
+
 data.raw["electric-turret"]["tesla-turret"].max_health = 3000
 data.raw["electric-turret"]["tesla-turret"].call_for_help_radius = 70
 data.raw["electric-turret"]["tesla-turret"].attack_parameters =

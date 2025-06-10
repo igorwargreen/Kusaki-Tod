@@ -34,7 +34,7 @@ data:extend({
     {
       productivity = 0.5,
       consumption = 4,
-      speed = 0.2
+      speed = 0.25
     }
   },
   {
@@ -51,9 +51,9 @@ data:extend({
 	weight = 20 * kg,
     effect =
     {
-      productivity = 1,
+      productivity = 0.75,
       consumption = 12,
-      speed = 0.3
+      speed = 0.5
     }
   },
   {

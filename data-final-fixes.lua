@@ -2,17 +2,20 @@
 
 --ReProductivity_Recipe = {}
 
---require("prototypes.item")
---require("prototypes.solar")
---require("prototypes.power module")
+require("prototypes.item")
+require("prototypes.solar")
+require("prototypes.power module")
+require("prototypes.robots")
+require("prototypes.vanilla")
+require("prototypes.vanilla_tech")
+require("prototypes.vanilla_recipe")
+
 --require("prototypes.ammo")
+
 --require("prototypes.krastorio")
 --require("prototypes.warfare")
 --require("prototypes.krastorio damage-technologies-bonuses-plus")
 --require("prototypes.vanilla damage-technologies-bonuses-plus")
---require("prototypes.robots")
---require("prototypes.vanilla")
---require("prototypes.vanilla_tech")
---require("prototypes.vanilla_recipe")
 
-require("pyAddon.QQQ")
+
+--require("pyAddon.QQQ")

@@ -774,15 +774,7 @@ data.raw["technology"]["planet-discovery-fulgora"].unit =
       },
       time = 60
     }
-data.raw["technology"]["jetpack-4"].unit =
-	{
-      count = 400,
-      ingredients =
-      {
-        {"based-science-pack", 1}
-      },
-      time = 30
-    }
+
 data.raw["technology"]["coal-liquefaction"].unit =
 	{
       count = 500,
@@ -959,16 +951,6 @@ data.raw["technology"]["cliff-explosives"].unit =
 data.raw["technology"]["speed-module-3"].unit =
 	{
       count = 4000,
-      ingredients =
-      {
-        {"based-science-pack", 1},
-        {"metallurgic-science-pack", 1}
-      },
-      time = 60
-    }
-data.raw["technology"]["aai-turbo-loader"].unit =
-	{
-      count = 1000,
       ingredients =
       {
         {"based-science-pack", 1},

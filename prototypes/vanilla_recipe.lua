@@ -149,17 +149,17 @@ data.raw["recipe"]["electronic-circuit"].ingredients =
     }
 data.raw["recipe"]["advanced-circuit"].ingredients =
     {
-      {type = "item", name = "electronic-circuit", amount = 12},
-      {type = "item", name = "plastic-bar", amount = 12}
+      {type = "item", name = "electronic-circuit", amount = 10},
+      {type = "item", name = "plastic-bar", amount = 10}
     }
 data.raw["recipe"]["processing-unit"].ingredients =
     {
       {type = "item", name = "advanced-circuit", amount = 20},
       {type = "fluid", name = "sulfuric-acid", amount = 100}
     }
-data.raw["recipe"]["speed-module"].ingredients = {{type = "item", name = "advanced-circuit", amount = 10}}
-data.raw["recipe"]["productivity-module"].ingredients = {{type = "item", name = "advanced-circuit", amount = 10}}
-data.raw["recipe"]["efficiency-module"].ingredients = {{type = "item", name = "advanced-circuit", amount = 10}}
+data.raw["recipe"]["speed-module"].ingredients = {{type = "item", name = "advanced-circuit", amount = 20}}
+data.raw["recipe"]["productivity-module"].ingredients = {{type = "item", name = "advanced-circuit", amount = 20}}
+data.raw["recipe"]["efficiency-module"].ingredients = {{type = "item", name = "advanced-circuit", amount = 20}}
 data.raw["recipe"]["speed-module-2"].ingredients =
     {
       {type = "item", name = "speed-module", amount = 1},
