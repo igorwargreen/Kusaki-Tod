@@ -9,8 +9,8 @@ require("prototypes.robots")
 require("prototypes.vanilla")
 require("prototypes.vanilla_tech")
 require("prototypes.vanilla_recipe")
-
---require("prototypes.ammo")
+require("prototypes.character")
+require("prototypes.ammo")
 
 --require("prototypes.krastorio")
 --require("prototypes.warfare")

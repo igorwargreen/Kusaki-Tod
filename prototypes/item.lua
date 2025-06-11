@@ -24,9 +24,9 @@ data.raw["artillery-wagon"]["artillery-wagon"].max_speed = 2.4
 data.raw["artillery-wagon"]["artillery-wagon"].air_resistance = 0
 data.raw["artillery-wagon"]["artillery-wagon"].braking_force = 100
 
---data.raw["ammo-turret"]["gun-turret"].max_health = 1000
---data.raw["ammo-turret"]["gun-turret"]["attack_parameters"].cooldown = 6
---data.raw["ammo-turret"]["gun-turret"]["attack_parameters"].range = 30
+data.raw["ammo-turret"]["gun-turret"].max_health = 1000
+data.raw["ammo-turret"]["gun-turret"]["attack_parameters"].cooldown = 6
+data.raw["ammo-turret"]["gun-turret"]["attack_parameters"].range = 30
 
 data.raw["tile"]["stone-path"].walking_speed_modifier = 1.5
 
