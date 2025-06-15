@@ -10,8 +10,12 @@ for _, item in pairs(data.raw["item"]) do
   data.raw["item"][item.name].spoil_ticks = 0
 end
 
-data.raw["item"]["steam-engine"].place_result = ""
-data.raw["item"]["boiler"].place_result = ""
+--data.raw["item"]["steam-engine"].place_result = ""
+--data.raw["item"]["boiler"].place_result = ""
+
+data.raw["radar"]["radar"].energy_usage = "1MW"
+data.raw["radar"]["radar"].max_distance_of_sector_revealed = 8
+data.raw["radar"]["radar"].max_distance_of_nearby_sector_revealed = 8
 
 data.raw["ammo"]["atomic-bomb"].ammo_category = "artillery-shell"
 

@@ -58,6 +58,11 @@ data.raw["underground-belt"]["express-underground-belt"].animation_speed_coeffic
 data.raw["underground-belt"]["turbo-underground-belt"].speed = 0.5
 data.raw["underground-belt"]["turbo-underground-belt"].animation_speed_coefficient = 4
 
+data.raw["underground-belt"]["underground-belt"].max_distance = 11
+data.raw["underground-belt"]["fast-underground-belt"].max_distance = 11
+data.raw["underground-belt"]["express-underground-belt"].max_distance = 11
+data.raw["underground-belt"]["turbo-underground-belt"].max_distance = 11
+
 data.raw["splitter"]["splitter"].speed = 0.05
 data.raw["splitter"]["splitter"].animation_speed_coefficient = 4
 data.raw["splitter"]["fast-splitter"].speed = 0.125
