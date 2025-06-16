@@ -122,12 +122,7 @@ data.raw["resource"]["crude-oil"].minimum = 150000
 data.raw["furnace"]["recycler"].allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
 data.raw["recipe"]["scrap-recycling"].allow_productivity = true
 
-data.raw["recipe"]["automation-science-pack"].energy_required = 10
-data.raw["recipe"]["logistic-science-pack"].energy_required = 10
-data.raw["recipe"]["chemical-science-pack"].energy_required = 10
-data.raw["recipe"]["military-science-pack"].energy_required = 10
-data.raw["recipe"]["production-science-pack"].energy_required = 10
-data.raw["recipe"]["utility-science-pack"].energy_required = 10
+
 
 data.raw["electric-turret"]["tesla-turret"].max_health = 3000
 data.raw["electric-turret"]["tesla-turret"].call_for_help_radius = 70

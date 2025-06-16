@@ -58,7 +58,7 @@ data:extend({
     type = "recipe",
     name = "based-science-pack",
     enabled = false,
-    energy_required = 10,
+    energy_required = 60,
     ingredients =
     {
       {type = "item", name = "automation-science-pack", amount = 2},
@@ -109,16 +109,49 @@ data.raw["recipe"]["big-mining-drill"].ingredients =
       {type = "item", name = "electric-engine-unit", amount = 50},
       {type = "item", name = "advanced-circuit", amount = 25},
     }
+
 data.raw["recipe"]["automation-science-pack"].ingredients =
     {
       {type = "item", name = "copper-plate", amount = 2},
       {type = "item", name = "iron-gear-wheel", amount = 2}
     }
+data.raw["recipe"]["automation-science-pack"].energy_required = 10
 data.raw["recipe"]["logistic-science-pack"].ingredients =
     {
-      {type = "item", name = "inserter", amount = 10},
-      {type = "item", name = "transport-belt", amount = 10}
+      {type = "item", name = "fast-inserter", amount = 4},
+      {type = "item", name = "steel-plate", amount = 10}
     }
+data.raw["recipe"]["logistic-science-pack"].energy_required = 10
+data.raw["recipe"]["military-science-pack"].ingredients =
+    {
+      {type = "item", name = "piercing-rounds-magazine", amount = 25},
+      {type = "item", name = "grenade", amount = 5},
+    }
+data.raw["recipe"]["military-science-pack"].results = {{type="item", name="military-science-pack", amount=1}}
+data.raw["recipe"]["military-science-pack"].energy_required = 10
+data.raw["recipe"]["chemical-science-pack"].ingredients =
+    {
+      {type = "item", name = "engine-unit", amount = 5},
+      {type = "item", name = "advanced-circuit", amount = 5},
+      {type = "item", name = "sulfur", amount = 30}
+    }
+data.raw["recipe"]["chemical-science-pack"].results = {{type="item", name="chemical-science-pack", amount=1}}
+data.raw["recipe"]["chemical-science-pack"].energy_required = 30
+data.raw["recipe"]["production-science-pack"].ingredients =
+    {
+      {type = "item", name = "electric-furnace", amount = 10}
+    }
+data.raw["recipe"]["production-science-pack"].results = {{type="item", name="production-science-pack", amount=1}}
+data.raw["recipe"]["production-science-pack"].energy_required = 30
+data.raw["recipe"]["utility-science-pack"].ingredients =
+    {
+      {type = "item", name = "low-density-structure", amount = 5},
+      {type = "item", name = "processing-unit", amount = 5},
+      {type = "item", name = "flying-robot-frame", amount = 5}
+    }
+data.raw["recipe"]["utility-science-pack"].results = {{type="item", name="utility-science-pack", amount=1}}
+data.raw["recipe"]["utility-science-pack"].energy_required = 30
+
 data.raw["recipe"]["piercing-rounds-magazine"].ingredients =
     {
       {type = "item", name = "firearm-magazine", amount = 3},
@@ -126,20 +159,6 @@ data.raw["recipe"]["piercing-rounds-magazine"].ingredients =
       {type = "item", name = "copper-plate", amount = 3}
     }
 data.raw["recipe"]["piercing-rounds-magazine"].results = {{type="item", name="piercing-rounds-magazine", amount=3}}
-data.raw["recipe"]["military-science-pack"].ingredients =
-    {
-      {type = "item", name = "piercing-rounds-magazine", amount = 5},
-      {type = "item", name = "grenade", amount = 1},
-    }
-data.raw["recipe"]["military-science-pack"].results = {{type="item", name="military-science-pack", amount=1}}
-data.raw["recipe"]["production-science-pack"].ingredients =
-    {
-      {type = "item", name = "electric-furnace", amount = 2},
-      {type = "item", name = "rail", amount = 45}
-    }
-data.raw["recipe"]["production-science-pack"].results = {{type="item", name="production-science-pack", amount=1}}
-data.raw["recipe"]["chemical-science-pack"].results = {{type="item", name="chemical-science-pack", amount=1}}
-data.raw["recipe"]["utility-science-pack"].results = {{type="item", name="utility-science-pack", amount=1}}
 
 data.raw["recipe"]["copper-cable"].ingredients = {{type = "item", name = "copper-plate", amount = 4}}
 data.raw["recipe"]["copper-cable"].results = {{type="item", name="copper-cable", amount=1}}
@@ -335,3 +354,22 @@ data.raw["recipe"]["rail"].ingredients =
       {type = "item", name = "steel-plate", amount = 5}
     }
 data.raw["recipe"]["rail"].energy_required = 5
+
+data.raw["recipe"]["assembling-machine-1"].ingredients =
+    {
+      {type = "item", name = "electronic-circuit", amount = 10},
+      {type = "item", name = "iron-gear-wheel", amount = 10}
+    }
+data.raw["recipe"]["assembling-machine-1"].energy_required = 5
+data.raw["recipe"]["assembling-machine-2"].ingredients =
+    {
+      {type = "item", name = "steel-plate", amount = 10},
+      {type = "item", name = "assembling-machine-1", amount = 2}
+    }
+data.raw["recipe"]["assembling-machine-2"].energy_required = 5
+data.raw["recipe"]["assembling-machine-3"].ingredients =
+    {
+      {type = "item", name = "electric-engine-unit", amount = 5},
+      {type = "item", name = "assembling-machine-2", amount = 2}
+    }
+data.raw["recipe"]["assembling-machine-3"].energy_required = 5
