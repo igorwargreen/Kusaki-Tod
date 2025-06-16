@@ -12,6 +12,7 @@ require("prototypes.vanilla_recipe")
 require("prototypes.character")
 require("prototypes.ammo")
 require("prototypes.loader")
+require("prototypes.enemy")
 
 --require("prototypes.krastorio")
 --require("prototypes.warfare")

@@ -219,13 +219,17 @@ data.raw["recipe"]["copper-plate"].ingredients =
     {
       {type = "item", name = "copper-ore", amount = 4}
     }
-data.raw["recipe"]["copper-plate"].energy_required = 5
-
+data.raw["recipe"]["copper-plate"].energy_required = 8
 data.raw["recipe"]["iron-plate"].ingredients =
     {
       {type = "item", name = "iron-ore", amount = 4}
     }
-data.raw["recipe"]["iron-plate"].energy_required = 5
+data.raw["recipe"]["iron-plate"].energy_required = 8
+data.raw["recipe"]["stone-brick"].ingredients =
+    {
+      {type = "item", name = "stone", amount = 8}
+    }
+data.raw["recipe"]["stone-brick"].energy_required = 16
 
 data.raw["recipe"]["coal-liquefaction"].ingredients =
     {
@@ -240,7 +244,7 @@ data.raw["recipe"]["iron-gear-wheel"].ingredients =
     {
       {type = "item", name = "iron-plate", amount = 4}
     }
-data.raw["recipe"]["iron-gear-wheel"].energy_required = 5
+data.raw["recipe"]["iron-gear-wheel"].energy_required = 4
 
 data.raw["recipe"]["engine-unit"].ingredients =
     {
@@ -259,3 +263,75 @@ data.raw["recipe"]["flying-robot-frame"].ingredients =
       {type = "item", name = "battery", amount = 4},
       {type = "item", name = "steel-plate", amount = 10}
     }
+
+data.raw["recipe"]["stone-furnace"].ingredients =
+    {
+      {type = "item", name = "stone", amount = 40}
+    }
+data.raw["recipe"]["steel-furnace"].ingredients =
+    {
+      {type = "item", name = "stone-brick", amount = 50},
+      {type = "item", name = "steel-plate", amount = 25}
+    }
+data.raw["recipe"]["steel-furnace"].energy_required = 60
+data.raw["recipe"]["electric-furnace"].ingredients =
+    {
+      {type = "item", name = "steel-furnace", amount = 1},
+      {type = "item", name = "electric-engine-unit", amount = 4}
+    }
+data.raw["recipe"]["electric-furnace"].energy_required = 60
+
+data.raw["recipe"]["burner-mining-drill"].ingredients =
+    {
+      {type = "item", name = "iron-gear-wheel", amount = 5},
+      {type = "item", name = "stone-furnace", amount = 2}
+    }
+data.raw["recipe"]["burner-mining-drill"].energy_required = 5
+data.raw["recipe"]["electric-mining-drill"].ingredients =
+    {
+      {type = "item", name = "electronic-circuit", amount = 5},
+      {type = "item", name = "burner-mining-drill", amount = 2}
+    }
+data.raw["recipe"]["electric-mining-drill"].energy_required = 20
+
+data.raw["recipe"]["inserter"].ingredients =
+    {
+      {type = "item", name = "electronic-circuit", amount = 1},
+      {type = "item", name = "iron-gear-wheel", amount = 1}
+    }
+data.raw["recipe"]["inserter"].energy_required = 4
+data.raw["recipe"]["fast-inserter"].ingredients =
+    {
+      {type = "item", name = "inserter", amount = 4}
+    }
+data.raw["recipe"]["fast-inserter"].energy_required = 4
+data.raw["recipe"]["bulk-inserter"].ingredients =
+    {
+      {type = "item", name = "fast-inserter", amount = 4},
+      {type = "item", name = "advanced-circuit", amount = 2}
+    }
+data.raw["recipe"]["bulk-inserter"].energy_required = 4
+
+data.raw["recipe"]["small-electric-pole"].ingredients =
+    {
+      {type = "item", name = "stone", amount = 4},
+      {type = "item", name = "copper-cable", amount = 1}
+    }
+data.raw["recipe"]["medium-electric-pole"].ingredients =
+    {
+      {type = "item", name = "steel-plate", amount = 4},
+      {type = "item", name = "copper-cable", amount = 2}
+    }
+data.raw["recipe"]["substation"].ingredients =
+    {
+      {type = "item", name = "steel-plate", amount = 100},
+      {type = "item", name = "advanced-circuit", amount = 20},
+      {type = "item", name = "copper-cable", amount = 40}
+    }
+
+data.raw["recipe"]["rail"].ingredients =
+    {
+      {type = "item", name = "stone-brick", amount = 20},
+      {type = "item", name = "steel-plate", amount = 5}
+    }
+data.raw["recipe"]["rail"].energy_required = 5
