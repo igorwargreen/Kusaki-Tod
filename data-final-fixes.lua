@@ -13,6 +13,7 @@ require("prototypes.character")
 require("prototypes.ammo")
 require("prototypes.loader")
 require("prototypes.enemy")
+require("prototypes.nanobot")
 
 --require("prototypes.krastorio")
 --require("prototypes.warfare")

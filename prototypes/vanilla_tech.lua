@@ -172,9 +172,9 @@ data.raw["technology"]["logistics"].research_trigger =
       item = "transport-belt",
       count = 200
     }
-data.raw["technology"]["gun-turret"].unit = nill
-data.raw["technology"]["automation"].unit = nill
-data.raw["technology"]["logistics"].unit = nill
+data.raw["technology"]["gun-turret"].unit = nil
+data.raw["technology"]["automation"].unit = nil
+data.raw["technology"]["logistics"].unit = nil
 data.raw["technology"]["physical-projectile-damage-1"].effects =
     {
       {
