@@ -14,6 +14,7 @@ require("prototypes.ammo")
 require("prototypes.loader")
 require("prototypes.enemy")
 require("prototypes.nanobot")
+require("prototypes.teleport")
 
 --require("prototypes.krastorio")
 --require("prototypes.warfare")
