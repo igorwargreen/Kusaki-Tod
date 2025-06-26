@@ -1,8 +1,8 @@
-data.raw["loader-1x1"]["mdrn-loader"].speed = 0.05
-data.raw["loader-1x1"]["fast-mdrn-loader"].speed = 0.125
-data.raw["loader-1x1"]["express-mdrn-loader"].speed = 0.25
-data.raw["loader-1x1"]["turbo-mdrn-loader"].speed = 0.5
-data.raw["loader-1x1"]["stack-mdrn-loader"].speed = 0.5
+data.raw["loader-1x1"]["mdrn-loader"].speed = 0.1
+data.raw["loader-1x1"]["fast-mdrn-loader"].speed = 0.2
+data.raw["loader-1x1"]["express-mdrn-loader"].speed = 0.4
+data.raw["loader-1x1"]["turbo-mdrn-loader"].speed = 0.8
+data.raw["loader-1x1"]["stack-mdrn-loader"].speed = 0.8
 
 data.raw["recipe"]["mdrn-loader"].ingredients =
     {
@@ -50,3 +50,11 @@ data.raw["technology"]["stack-mdrn-loader"].unit =
       },
       time = 60
     }
+data.raw["technology"]["mdrn-loader"].unit = nil
+data.raw["technology"]["mdrn-loader"].research_trigger =
+    {
+      type = "craft-item",
+      item = "transport-belt",
+      count = 1000
+    }
+

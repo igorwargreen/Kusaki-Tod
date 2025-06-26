@@ -16,7 +16,7 @@ require("prototypes.enemy")
 require("prototypes.nanobot")
 require("prototypes.teleport")
 
---require("prototypes.fps")
+require("prototypes.fps")
 
 --require("prototypes.krastorio")
 --require("prototypes.warfare")

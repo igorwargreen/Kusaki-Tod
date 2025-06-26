@@ -53,11 +53,9 @@ local burner_picture =
   {
     {
       filename = "__Kusaki-Tod__/graphics/heating-energy-station.png",
-      width = 214,
-	  height = 320,
-      scale = 0.5,
-	  shift = util.by_pixel( -1.0, -22.5),
-	  line_length = 1,
+      width = 300,
+	  height = 300,
+      scale = 0.8
     },
   }
 }
@@ -66,11 +64,10 @@ local reactor_picture =
   layers =
   {
     {
-          filename = "__base__/graphics/entity/nuclear-reactor/reactor.png",
-          width = 302,
-          height = 318,
-          scale = 0.5,
-          shift = util.by_pixel(-5, -7)
+          filename = "__Kusaki-Tod__/graphics/reactor.png",
+          width = 500,
+          height = 500,
+          scale = 0.8
     }
   }
 }
@@ -93,7 +90,7 @@ data:extend({
         min = 10
       }
     },
-    max_power_output = "30MW",
+    max_power_output = "100MW",
 	energy_source =
     {
       type = "electric",
@@ -103,13 +100,13 @@ data:extend({
     {
       type = "burner",
       fuel_categories = {"chemical"},
-      emissions_per_minute = {pollution = 100},
+      emissions_per_minute = {pollution = 200},
       effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
     },
-    collision_box = {{-1.25, -1.25}, {1.25, 1.25}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     drawing_box_vertical_extension = 1,
 
 	animation = burner_picture,
@@ -149,8 +146,8 @@ data:extend({
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
     },
-    collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    collision_box = {{-5.5, -5.5}, {5.5, 5.5}},
+    selection_box = {{-5.5, -5.5}, {5.5, 5.5}},
 
 	animation = reactor_picture,
   },

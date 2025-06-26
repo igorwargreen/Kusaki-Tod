@@ -5,8 +5,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "boiler", amount = 20},
-      {type = "item", name = "steam-engine", amount = 40}
+      {type = "item", name = "boiler", amount = 25},
+      {type = "item", name = "steam-engine", amount = 50}
     },
     energy_required = 60,
     results = {{type="item", name="heating-energy-station", amount=1}},
@@ -285,7 +285,7 @@ data.raw["recipe"]["flying-robot-frame"].ingredients =
 
 data.raw["recipe"]["stone-furnace"].ingredients =
     {
-      {type = "item", name = "stone", amount = 40}
+      {type = "item", name = "stone", amount = 400}
     }
 data.raw["recipe"]["steel-furnace"].ingredients =
     {
