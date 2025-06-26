@@ -1,40 +1,40 @@
 
 
-data.raw["inserter"]["inserter"].working_sound = nil
-data.raw["inserter"]["inserter"].damaged_trigger_effect = nil
-data.raw["inserter"]["inserter"].resistances = nil
-data.raw["inserter"]["inserter"].hand_base_shadow = nil
-data.raw["inserter"]["inserter"].hand_closed_shadow = nil
-data.raw["inserter"]["inserter"].hand_open_shadow = nil
+--data.raw["inserter"]["inserter"].working_sound = nil
+--data.raw["inserter"]["inserter"].damaged_trigger_effect = nil
+--data.raw["inserter"]["inserter"].resistances = nil
+--data.raw["inserter"]["inserter"].hand_base_shadow = nil
+--data.raw["inserter"]["inserter"].hand_closed_shadow = nil
+--data.raw["inserter"]["inserter"].hand_open_shadow = nil
 
-data.raw["inserter"]["fast-inserter"].working_sound = nil
-data.raw["inserter"]["fast-inserter"].damaged_trigger_effect = nil
-data.raw["inserter"]["fast-inserter"].resistances = nil
-data.raw["inserter"]["fast-inserter"].hand_base_shadow = nil
-data.raw["inserter"]["fast-inserter"].hand_closed_shadow = nil
-data.raw["inserter"]["fast-inserter"].hand_open_shadow = nil
+--data.raw["inserter"]["fast-inserter"].working_sound = nil
+--data.raw["inserter"]["fast-inserter"].damaged_trigger_effect = nil
+--data.raw["inserter"]["fast-inserter"].resistances = nil
+--data.raw["inserter"]["fast-inserter"].hand_base_shadow = nil
+--data.raw["inserter"]["fast-inserter"].hand_closed_shadow = nil
+--data.raw["inserter"]["fast-inserter"].hand_open_shadow = nil
 
-data.raw["furnace"]["stone-furnace"].working_sound = nil
-data.raw["furnace"]["stone-furnace"].resistances = nil
-data.raw["furnace"]["stone-furnace"].smoke = nil
+--data.raw["furnace"]["stone-furnace"].working_sound = nil
+--data.raw["furnace"]["stone-furnace"].resistances = nil
+--data.raw["furnace"]["stone-furnace"].smoke = nil
 data.raw["furnace"]["stone-furnace"].crafting_speed = 2
 data.raw["item"]["stone-furnace"].place_result = "stone-furnace-fps"
 
-data.raw["furnace"]["steel-furnace"].working_sound = nil
-data.raw["furnace"]["steel-furnace"].resistances = nil
-data.raw["furnace"]["steel-furnace"].smoke = nil
+--data.raw["furnace"]["steel-furnace"].working_sound = nil
+--data.raw["furnace"]["steel-furnace"].resistances = nil
+--data.raw["furnace"]["steel-furnace"].smoke = nil
 data.raw["furnace"]["steel-furnace"].crafting_speed = 4
 
-data.raw["furnace"]["electric-furnace"].working_sound = nil
-data.raw["furnace"]["electric-furnace"].resistances = nil
+--data.raw["furnace"]["electric-furnace"].working_sound = nil
+--data.raw["furnace"]["electric-furnace"].resistances = nil
 data.raw["furnace"]["electric-furnace"].crafting_speed = 8
 data.raw["furnace"]["electric-furnace"].module_slots = 4
 
-data.raw["mining-drill"]["electric-mining-drill"].working_sound = nil
+--data.raw["mining-drill"]["electric-mining-drill"].working_sound = nil
 data.raw["mining-drill"]["electric-mining-drill"].mining_speed = 1
 
 
-data.raw["transport-belt"]["transport-belt"].working_sound = nil
+--data.raw["transport-belt"]["transport-belt"].working_sound = nil
 
 data:extend({
   {
