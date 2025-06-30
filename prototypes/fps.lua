@@ -31,7 +31,7 @@ data.raw["furnace"]["electric-furnace"].crafting_speed = 8
 data.raw["furnace"]["electric-furnace"].module_slots = 4
 
 --data.raw["mining-drill"]["electric-mining-drill"].working_sound = nil
-data.raw["mining-drill"]["electric-mining-drill"].mining_speed = 1
+data.raw["mining-drill"]["electric-mining-drill"].mining_speed = 4
 
 
 --data.raw["transport-belt"]["transport-belt"].working_sound = nil
