@@ -33,6 +33,13 @@ data.raw["furnace"]["electric-furnace"].module_slots = 4
 --data.raw["mining-drill"]["electric-mining-drill"].working_sound = nil
 data.raw["mining-drill"]["electric-mining-drill"].mining_speed = 4
 
+data.raw["assembling-machine"]["assembling-machine-1"].crafting_speed = 1
+data.raw["assembling-machine"]["assembling-machine-1"].energy_usage = "200kW"
+data.raw["assembling-machine"]["assembling-machine-2"].crafting_speed = 2
+data.raw["assembling-machine"]["assembling-machine-2"].energy_usage = "500kW"
+data.raw["assembling-machine"]["assembling-machine-3"].crafting_speed = 4
+data.raw["assembling-machine"]["assembling-machine-3"].energy_usage = "1MW"
+
 
 --data.raw["transport-belt"]["transport-belt"].working_sound = nil
 
