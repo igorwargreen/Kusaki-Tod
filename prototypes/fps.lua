@@ -17,13 +17,12 @@
 --data.raw["furnace"]["stone-furnace"].working_sound = nil
 --data.raw["furnace"]["stone-furnace"].resistances = nil
 --data.raw["furnace"]["stone-furnace"].smoke = nil
-data.raw["furnace"]["stone-furnace"].crafting_speed = 2
+data.raw["furnace"]["stone-furnace"].next_upgrade = nil
 data.raw["item"]["stone-furnace"].place_result = "stone-furnace-fps"
 
 --data.raw["furnace"]["steel-furnace"].working_sound = nil
 --data.raw["furnace"]["steel-furnace"].resistances = nil
 --data.raw["furnace"]["steel-furnace"].smoke = nil
-data.raw["furnace"]["steel-furnace"].crafting_speed = 4
 
 --data.raw["furnace"]["electric-furnace"].working_sound = nil
 --data.raw["furnace"]["electric-furnace"].resistances = nil
