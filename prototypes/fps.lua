@@ -40,6 +40,34 @@ data.raw["assembling-machine"]["assembling-machine-2"].energy_usage = "500kW"
 data.raw["assembling-machine"]["assembling-machine-3"].crafting_speed = 4
 data.raw["assembling-machine"]["assembling-machine-3"].energy_usage = "1MW"
 
+data.raw["furnace"]["steel-furnace"].working_sound = nil
+data.raw["furnace"]["steel-furnace"].resistances = nil
+data.raw["furnace"]["steel-furnace"].collision_box = {{-2.5, -2.5}, {2.5, 2.5}}
+data.raw["furnace"]["steel-furnace"].selection_box = {{-2.5, -2.5}, {2.5, 2.5}}
+data.raw["furnace"]["steel-furnace"].crafting_speed = 16
+data.raw["furnace"]["steel-furnace"].energy_usage = "2MW"
+data.raw["furnace"]["steel-furnace"].graphics_set =
+    {
+      animation =
+      {
+        layers =
+        {
+          {
+            filename = "__base__/graphics/entity/steel-furnace/steel-furnace.png",
+            priority = "high",
+            width = 200,
+            height = 200,
+            scale = 0.8
+          }
+        }
+     }}
+data.raw["furnace"]["steel-furnace"].energy_source =
+    {
+      type = "burner",
+      fuel_categories = {"chemical"},
+      effectivity = 1,
+      fuel_inventory_size = 1,
+    }
 
 --data.raw["transport-belt"]["transport-belt"].working_sound = nil
 
