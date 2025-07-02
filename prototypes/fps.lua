@@ -52,7 +52,7 @@ data.raw["furnace"]["steel-furnace"].graphics_set =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/steel-furnace/steel-furnace.png",
+            filename = "__Kusaki-Tod__/graphics/steel-furnace200.png",
             priority = "high",
             width = 200,
             height = 200,
