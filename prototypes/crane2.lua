@@ -341,5 +341,8 @@ register_crane("inserter", false, "nco-py-short-crane-mk1", f_ips, 0.012, {
 	"railway",
 }, nil)
 
-data.raw["inserter"]["nco-py-short-crane-mk1"].extension_speed = 0.2
-data.raw["inserter"]["nco-py-short-crane-mk1"].rotation_speed = 0.08
+data.raw["inserter"]["nco-py-short-crane-mk1"].extension_speed = 12/60
+data.raw["inserter"]["nco-py-short-crane-mk1"].rotation_speed = 6/60
+data.raw["inserter"]["nco-py-short-crane-mk1"].energy_source = { type = "void" }
+data.raw["inserter"]["nco-py-short-crane-mk1"].energy_per_movement = "0J"
+data.raw["inserter"]["nco-py-short-crane-mk1"].energy_per_rotation = "0J"
