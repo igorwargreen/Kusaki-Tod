@@ -13,6 +13,13 @@ data.raw["recipe"]["ash-separation"].results = {
         {type = "item", name = "coal-dust",  amount = 1, probability = 0.2},
         {type = "item", name = "soot", amount = 4}
     }
+data.raw["recipe"]["soot-separation"].results = {
+        {type = "item", name = "iron-ore",  amount = 1, probability = 0.5},
+        {type = "item", name = "copper-ore",  amount = 1, probability = 0.2},
+        {type = "item", name = "ore-aluminium",  amount = 1, probability = 0.1},
+        {type = "item", name = "ore-zinc",  amount = 1, probability = 0.1},
+        {type = "item", name = "ore-lead",  amount = 1, probability = 0.1}
+    }
 
 data.raw["recipe"]["coal-gas-from-coke"].energy_required = 4
 data.raw["recipe"]["coal-gas-from-coke"].results = {
