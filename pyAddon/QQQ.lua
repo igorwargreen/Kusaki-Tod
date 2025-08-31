@@ -52,3 +52,18 @@ data.raw["technology"]["waterfill"].unit = {
 		}
 
 data.raw["pump"]["pump"].pumping_speed = 3000
+
+data:extend({
+  {
+    type = "recipe",
+    name = "saps-from-tree-mk01",
+    enabled = true,
+    ingredients =
+    {
+      {type = "item", name = "tree-mk01", amount = 10}
+    },
+    energy_required = 60,
+    results = {{type="item", name="saps", amount=1}},
+	allow_productivity = true
+  }
+})
