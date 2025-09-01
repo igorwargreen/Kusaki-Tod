@@ -112,3 +112,23 @@ data.raw["recipe"]["vrauks-paddock-mk01"].ingredients = {
         {type = "item", name = "aluminium-plate", amount = 40},
         {type = "item", name = "water-barrel",    amount = 5}
 	}
+data.raw["recipe"]["full-render-vrauks"].results = {
+		{type = "item", name = "meat",    amount = 2},
+		{type = "item", name = "chitin",    amount = 1},
+		{type = "item", name = "guts",    amount = 2},
+		{type = "item", name = "brain",    amount = 1},
+		{type = "fluid", name = "formic-acid",    amount = 200}
+	}
+data.raw["recipe"]["full-render-vrauks"].ingredients = {
+		{type = "item", name = "vrauks", amount = 1}
+	}
+data.raw["recipe"]["slaughterhouse-mk01"].ingredients = {
+		{type = "item", name = "stone-brick",        amount = 100},
+        {type = "item", name = "pipe",               amount = 20},
+        {type = "item", name = "titanium-plate",     amount = 40},
+        {type = "item", name = "steam-engine",       amount = 10},
+        {type = "item", name = "electronic-circuit", amount = 50},
+        {type = "item", name = "iron-gear-wheel",    amount = 70},
+        {type = "item", name = "glass",              amount = 50},
+        {type = "item", name = "cage",              amount = 1}
+	}
