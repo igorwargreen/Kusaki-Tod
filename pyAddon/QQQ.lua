@@ -74,3 +74,41 @@ data:extend({
 	allow_productivity = true
   }
 })
+
+data.raw["recipe"]["vrauks-cocoon-1"].results = {
+        {type = "item", name = "cocoon", amount = 5}
+    }
+data.raw["recipe"]["vrauks-cocoon-1"].ingredients = {
+		{type = "item", name = "moss", amount = 10},
+		{type = "item", name = "saps", amount = 3},
+		{type = "item", name = "native-flora", amount = 5}
+	}
+data.raw["recipe"]["rc-mk01"].ingredients = {
+		{type = "item", name = "iron-gear-wheel",    amount = 200},
+        {type = "item", name = "steel-plate",        amount = 100},
+        {type = "item", name = "iron-plate",         amount = 200},
+        {type = "item", name = "titanium-plate",     amount = 100},
+        {type = "item", name = "glass",              amount = 50},
+        {type = "item", name = "stone-brick",        amount = 400},
+        {type = "item", name = "electronic-circuit", amount = 20},
+        {type = "item", name = "concrete",           amount = 100},
+        {type = "item", name = "steam-engine",       amount = 3},
+        {type = "item", name = "water-barrel",       amount = 5}
+	}
+data.raw["recipe"]["vrauks-1"].results = {
+		{type = "item", name = "vrauks",    amount = 2}
+	}
+data.raw["recipe"]["vrauks-1"].ingredients = {
+		{type = "item", name = "moss", amount = 5},
+		{type = "item", name = "cocoon", amount = 10},
+		{type = "item", name = "native-flora", amount = 15}
+	}
+data.raw["recipe"]["vrauks-paddock-mk01"].ingredients = {
+		{type = "item", name = "micro-mine-mk01", amount = 1},
+        {type = "item", name = "stone-brick",     amount = 20},
+        {type = "item", name = "iron-plate",      amount = 20},
+        {type = "item", name = "copper-plate",    amount = 20},
+        {type = "item", name = "glass",           amount = 20},
+        {type = "item", name = "aluminium-plate", amount = 40},
+        {type = "item", name = "water-barrel",    amount = 5}
+	}
