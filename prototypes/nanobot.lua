@@ -12,7 +12,7 @@ data.raw["technology"]["nano-range-2"].effects = {{type = 'ammo-damage', ammo_ca
 data.raw["technology"]["nano-range-3"].effects = {{type = 'ammo-damage', ammo_category = 'nano-ammo', modifier = 2}}
 data.raw["technology"]["nano-range-4"].effects = {{type = 'ammo-damage', ammo_category = 'nano-ammo', modifier = 2}}
 
-data.raw["technology"]["nanobots"].prerequisites = {'automation-science-pack'}
+data.raw["technology"]["nanobots"].prerequisites = nil
 data.raw["technology"]["nanobots"].unit = nil
 data.raw["technology"]["nanobots"].research_trigger = 
     {
