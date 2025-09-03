@@ -69,10 +69,23 @@ data:extend({
     {
       {type = "item", name = "tree-mk01", amount = 10}
     },
-    energy_required = 60,
+    energy_required = 40,
     results = {{type="item", name="saps", amount=1}},
 	allow_productivity = true
-  }
+  },
+  {
+    type = "recipe",
+    name = "fish-from-brain",
+    enabled = true,
+    ingredients =
+    {
+      {type = "item", name = "brain", amount = 50}
+    },
+    energy_required = 40,
+    results = {{type="item", name="fish", amount=1}},
+	category = "fish-farm",
+	allow_productivity = true
+  },
 })
 
 data.raw["recipe"]["vrauks-cocoon-1"].results = {

@@ -336,7 +336,7 @@ end
 local f_ips = 250
 
 register_crane("inserter", false, "nco-py-short-crane-mk1", f_ips, 0.012, {
-    {type = "item", name = "fast-inserter", amount = 150},
+    {type = "item", name = "inserter", amount = 50},
 }, {
 	"railway",
 }, nil)
