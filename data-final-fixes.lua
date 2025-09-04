@@ -25,6 +25,7 @@
 
 
 require("pyAddon.BeltInserter")
+require("pyAddon.Bob-Inserter")
 require("pyAddon.Character")
 require("pyAddon.Loader")
 require("pyAddon.Nanobot")
