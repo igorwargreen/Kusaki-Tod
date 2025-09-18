@@ -24,6 +24,7 @@
 --require("prototypes.vanilla damage-technologies-bonuses-plus")
 
 
+require("pyAddon.AlienLife.auog")
 require("pyAddon.BeltInserter")
 require("pyAddon.Bob-Inserter")
 require("pyAddon.Character")
