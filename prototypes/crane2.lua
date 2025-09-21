@@ -333,7 +333,7 @@ local function register_crane(entityName, wide, newName, forced_ips, forced_spee
 end
 
 --vanilla inserters
-local f_ips = 250
+local f_ips = 1000
 
 register_crane("inserter", false, "nco-py-short-crane-mk1", f_ips, 0.012, {
     {type = "item", name = "inserter", amount = 50},
@@ -341,8 +341,12 @@ register_crane("inserter", false, "nco-py-short-crane-mk1", f_ips, 0.012, {
 	"railway",
 }, nil)
 
-data.raw["inserter"]["nco-py-short-crane-mk1"].extension_speed = 12/60
-data.raw["inserter"]["nco-py-short-crane-mk1"].rotation_speed = 6/60
+--data.raw["inserter"]["nco-py-short-crane-mk1"].extension_speed = 12/60
+--data.raw["inserter"]["nco-py-short-crane-mk1"].rotation_speed = 6/60
+data.raw["inserter"]["nco-py-short-crane-mk1"].extension_speed = 100
+data.raw["inserter"]["nco-py-short-crane-mk1"].rotation_speed = 100
 data.raw["inserter"]["nco-py-short-crane-mk1"].energy_source = { type = "void" }
 data.raw["inserter"]["nco-py-short-crane-mk1"].energy_per_movement = "0J"
 data.raw["inserter"]["nco-py-short-crane-mk1"].energy_per_rotation = "0J"
+data.raw["inserter"]["nco-py-short-crane-mk1"].uses_inserter_stack_size_bonus = false
+data.raw["inserter"]["nco-py-short-crane-mk1"].stack_size_bonus = 249

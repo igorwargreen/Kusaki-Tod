@@ -58,7 +58,8 @@ data.raw["technology"]["waterfill"].unit = {
 			time = 30
 		}
 
-data.raw["pump"]["pump"].pumping_speed = 3000
+data.raw["pump"]["pump"].pumping_speed = 10000
+data.raw["fluid-wagon"]["fluid-wagon"].capacity = 200000
 
 data:extend({
   {

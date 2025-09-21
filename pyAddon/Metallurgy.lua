@@ -40,11 +40,11 @@ data.raw["recipe"]["grade-1-tin"].energy_required = 2
 
 -- МЕДЬ 4к2 2-1
 data.raw["recipe"]["grade-1-copper-crush"].ingredients = {
-		{type = "item", name = "copper-ore",     amount = 4}
+		{type = "item", name = "copper-ore",     amount = 8}
 	}
 data.raw["recipe"]["grade-1-copper-crush"].results = {
-		{type = "item", name = "grade-1-copper",       amount = 2},
-		{type = "item", name = "stone",       amount = 1}
+		{type = "item", name = "grade-1-copper",       amount = 4},
+		{type = "item", name = "stone",       amount = 2}
 	}
 data.raw["recipe"]["grade-1-copper-crush"].main_product = "grade-1-copper"
 data.raw["recipe"]["grade-1-copper-crush"].energy_required = 4
@@ -57,6 +57,14 @@ data.raw["recipe"]["grade-2-copper"].results = {
 	}
 data.raw["recipe"]["grade-2-copper"].main_product = "grade-2-copper"
 data.raw["recipe"]["grade-2-copper"].energy_required = 2
+
+data.raw["recipe"]["copper-plate-4"].ingredients = {
+		{type = "item", name = "grade-2-copper",     amount = 4}
+	}
+data.raw["recipe"]["copper-plate-4"].results = {
+		{type = "item", name = "copper-plate",       amount = 2}
+	}
+data.raw["recipe"]["copper-plate-4"].energy_required = 4
 
 
 -- ТИТАН 16к1 4-2-1 (было 10к1)
@@ -137,12 +145,12 @@ data.raw["recipe"]["steel-plate"].ingredients = {
 data.raw["recipe"]["steel-plate"].energy_required = 8
 
 
---ЖЕЛЕЗО плавка 16к1 (было 8к1)
+--ЖЕЛЕЗО МК-0
 data.raw["recipe"]["iron-plate"].ingredients = {
 		{type = "item", name = "iron-ore",     amount = 16}
 	}
 data.raw["recipe"]["iron-plate"].energy_required = 8
---ЖЕЛЕЗО 6к1 2-1 (было 8к1 5к1)
+--ЖЕЛЕЗО МК-1
 data.raw["recipe"]["grade-1-iron-crush"].ingredients = {
 		{type = "item", name = "iron-ore",     amount = 4}
 	}
@@ -159,6 +167,66 @@ data.raw["recipe"]["low-grade-smelting-iron"].results = {
 		{type = "item", name = "iron-plate", 	amount = 2}
 	}
 data.raw["recipe"]["low-grade-smelting-iron"].energy_required = 6
+--ЖЕЛЕЗО МК-2
+data.raw["recipe"]["molten-iron-05"].ingredients = {
+		{type = "item", name = "borax", amount = 2},
+		{type = "item", name = "processed-iron-ore", amount = 4},
+		{type = "fluid", name = "oxygen", amount = 40},
+	}
+data.raw["recipe"]["molten-iron-05"].results = {
+		{type = "fluid", name = "molten-iron", 	amount = 10}
+	}
+
+data.raw["recipe"]["iron-plate-1"].ingredients = {
+		{type = "item", name = "borax", amount = 2},
+		{type = "item", name = "sand-casting", amount = 1},
+		{type = "fluid", name = "molten-iron", amount = 100},
+	}
+data.raw["recipe"]["iron-plate-1"].results = {
+		{type = "item", name = "iron-plate", 	amount = 60}
+	}
+data.raw["recipe"]["hotair-iron-plate-1"].ingredients = {
+		{type = "item", name = "borax", amount = 2},
+		{type = "item", name = "sand-casting", amount = 1},
+		{type = "fluid", name = "molten-iron", amount = 100},
+		{type = "fluid", name = "hot-air", amount = 50},
+	}
+data.raw["recipe"]["hotair-iron-plate-1"].results = {
+		{type = "item", name = "iron-plate", 	amount = 80}
+	}
 
 
 
+
+-- АЛЮМИНИЙ
+data.raw["recipe"]["powdered-aluminium"].ingredients = {
+		{type = "item", name = "ore-aluminium", amount = 8}
+	}
+data.raw["recipe"]["powdered-aluminium"].results = {
+		{type = "item", name = "powdered-aluminium", 	amount = 2}
+	}
+data.raw["recipe"]["powdered-aluminium"].energy_required = 4
+
+
+-- ЦИНК
+data.raw["recipe"]["grade-2-zinc"].ingredients = {
+		{type = "item", name = "ore-zinc", amount = 8}
+	}
+data.raw["recipe"]["grade-2-zinc"].results = {
+		{type = "item", name = "grade-1-zinc", 	amount = 2},
+		{type = "item", name = "stone", 	amount = 1}
+	}
+data.raw["recipe"]["grade-2-zinc"].energy_required = 4
+data.raw["recipe"]["grade-2-zinc"].main_product = "grade-1-zinc"
+
+data.raw["recipe"]["grade-1-zinc"].ingredients = {
+		{type = "item", name = "grade-1-zinc", amount = 6},
+		{type = "item", name = "iron-plate", amount = 2},
+	}
+data.raw["recipe"]["grade-1-zinc"].results = {
+		{type = "item", name = "grade-2-zinc", 	amount = 2}
+	}
+data.raw["recipe"]["grade-1-zinc"].energy_required = 6
+data.raw["recipe"]["grade-1-zinc"].main_product = "grade-2-zinc"
+
+--??? ХРОМ КВАРЦ НИКЕЛЬ СВИНЕЦ
