@@ -27,36 +27,6 @@ data.raw["recipe"]["coal-gas-from-coke"].results = {
         {type = "fluid", name = "tar",   amount = 100}
     }
 
-data.raw["recipe"]["memory-unit"].ingredients = {
-		{type = "item", name = "steel-chest",             amount = 500}
-	}
-data.raw["recipe"]["fluid-memory-unit"].ingredients = {
-		{type = "item", name = "memory-unit",             amount = 1},
-		{type = "item", name = "pipe",             amount = 1000}
-	}
-data.raw["technology"]["memory-unit"].prerequisites = { "automation" }
-data.raw["technology"]["fluid-memory-storage"].prerequisites = { "memory-unit" }
-data.raw["technology"]["memory-unit"].unit = {
-			count = 50,
-			ingredients = {
-				{"automation-science-pack", 1}
-			},
-			time = 30
-		}
-data.raw["technology"]["fluid-memory-storage"].unit = {
-			count = 50,
-			ingredients = {
-				{"automation-science-pack", 1}
-			},
-			time = 30
-		}
-data.raw["technology"]["waterfill"].unit = {
-			count = 50,
-			ingredients = {
-				{"automation-science-pack", 1}
-			},
-			time = 30
-		}
 
 data.raw["pump"]["pump"].pumping_speed = 10000
 data.raw["fluid-wagon"]["fluid-wagon"].capacity = 200000
@@ -97,18 +67,6 @@ data.raw["recipe"]["vrauks-cocoon-1"].ingredients = {
 		{type = "item", name = "saps", amount = 3},
 		{type = "item", name = "native-flora", amount = 5}
 	}
-data.raw["recipe"]["rc-mk01"].ingredients = {
-		{type = "item", name = "iron-gear-wheel",    amount = 200},
-        {type = "item", name = "steel-plate",        amount = 100},
-        {type = "item", name = "iron-plate",         amount = 200},
-        {type = "item", name = "titanium-plate",     amount = 100},
-        {type = "item", name = "glass",              amount = 50},
-        {type = "item", name = "stone-brick",        amount = 400},
-        {type = "item", name = "electronic-circuit", amount = 20},
-        {type = "item", name = "concrete",           amount = 100},
-        {type = "item", name = "steam-engine",       amount = 3},
-        {type = "item", name = "water-barrel",       amount = 5}
-	}
 data.raw["recipe"]["vrauks-1"].results = {
 		{type = "item", name = "vrauks",    amount = 2}
 	}
@@ -116,15 +74,6 @@ data.raw["recipe"]["vrauks-1"].ingredients = {
 		{type = "item", name = "moss", amount = 5},
 		{type = "item", name = "cocoon", amount = 10},
 		{type = "item", name = "native-flora", amount = 15}
-	}
-data.raw["recipe"]["vrauks-paddock-mk01"].ingredients = {
-		{type = "item", name = "micro-mine-mk01", amount = 1},
-        {type = "item", name = "stone-brick",     amount = 20},
-        {type = "item", name = "iron-plate",      amount = 20},
-        {type = "item", name = "copper-plate",    amount = 20},
-        {type = "item", name = "glass",           amount = 20},
-        {type = "item", name = "aluminium-plate", amount = 40},
-        {type = "item", name = "water-barrel",    amount = 5}
 	}
 data.raw["recipe"]["full-render-vrauks"].results = {
 		{type = "item", name = "meat",    amount = 2},
@@ -136,13 +85,12 @@ data.raw["recipe"]["full-render-vrauks"].results = {
 data.raw["recipe"]["full-render-vrauks"].ingredients = {
 		{type = "item", name = "vrauks", amount = 1}
 	}
-data.raw["recipe"]["slaughterhouse-mk01"].ingredients = {
-		{type = "item", name = "stone-brick",        amount = 100},
-        {type = "item", name = "pipe",               amount = 20},
-        {type = "item", name = "titanium-plate",     amount = 40},
-        {type = "item", name = "steam-engine",       amount = 10},
-        {type = "item", name = "electronic-circuit", amount = 50},
-        {type = "item", name = "iron-gear-wheel",    amount = 70},
-        {type = "item", name = "glass",              amount = 50},
-        {type = "item", name = "cage",              amount = 1}
+data.raw["recipe"]["cage"].ingredients = {
+		{type = "item", name = "titanium-plate", amount = 8},
+		{type = "item", name = "solder", amount = 1}
+	}
+data.raw["recipe"]["refined-concrete"].ingredients = {
+		{type = "item", name = "concrete", amount = 5},
+		{type = "item", name = "steel-plate", amount = 1},
+		{type = "fluid", name = "water", amount = 100},
 	}

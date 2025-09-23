@@ -24,9 +24,12 @@
 --require("prototypes.vanilla damage-technologies-bonuses-plus")
 
 
+
+
 require("pyAddon.AlienLife.auog")
 require("pyAddon.BeltInserter")
 require("pyAddon.Bob-Inserter")
+require("pyAddon.Building")
 require("pyAddon.Character")
 require("pyAddon.Crane")
 require("pyAddon.Loader")
@@ -34,3 +37,7 @@ require("pyAddon.Metallurgy")
 require("pyAddon.Nanobot")
 require("pyAddon.QQQ")
 require("pyAddon.Robot")
+--equire("pyAddon.Tech-tree")
+
+require("pyAddon.OtherMods.Memory-unit")
+require("pyAddon.OtherMods.Waterfill")

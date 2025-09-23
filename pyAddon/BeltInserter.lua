@@ -29,6 +29,7 @@ data.raw["inserter"]["burner-inserter"].rotation_speed = 1/60
 data.raw["inserter"]["burner-inserter"].energy_source = { type = "void" }
 data.raw["inserter"]["burner-inserter"].energy_per_movement = "0J"
 data.raw["inserter"]["burner-inserter"].energy_per_rotation = "0J"
+data.raw["inserter"]["burner-inserter"].next_upgrade = "inserter"
 
 data.raw["inserter"]["inserter"].extension_speed = 8/60
 data.raw["inserter"]["inserter"].rotation_speed = 2/60
