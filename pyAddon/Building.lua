@@ -7,37 +7,37 @@ data:extend({
   },
 {type = "item",
 name = "UCM1",
-icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm1.png", icon_size=64, scale=1.5}},
+icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm1.png", icon_size=64, mipmap_count = 4, scale=0.8}},
 group = "production",
 subgroup = "UCM",
 stack_size = 1000},
 {type = "item",
 name = "UCM2",
-icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm2.png", icon_size=64, scale=1.5}},
+icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm2.png", icon_size=64, mipmap_count = 4, scale=0.8}},
 group = "production",
 subgroup = "UCM",
 stack_size = 1000},
 {type = "item",
 name = "UCM3",
-icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm3.png", icon_size=64, scale=1.5}},
+icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm3.png", icon_size=64, mipmap_count = 4, scale=0.8}},
 group = "production",
 subgroup = "UCM",
 stack_size = 1000},
 {type = "item",
 name = "UCM4",
-icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm4.png", icon_size=64, scale=1.5}},
+icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm4.png", icon_size=64, mipmap_count = 4, scale=0.8}},
 group = "production",
 subgroup = "UCM",
 stack_size = 1000},
 {type = "item",
 name = "UCM5",
-icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm5.png", icon_size=64, scale=1.5}},
+icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm5.png", icon_size=64, mipmap_count = 4, scale=0.8}},
 group = "production",
 subgroup = "UCM",
 stack_size = 1000},
 {type = "item",
 name = "UCM6",
-icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm6.png", icon_size=64, scale=1.5}},
+icons = {{ icon="__Kusaki-Tod__/graphics/icon/usm6.png", icon_size=64, mipmap_count = 4, scale=0.8}},
 group = "production",
 subgroup = "UCM",
 stack_size = 1000},
@@ -183,6 +183,11 @@ data.raw["recipe"]["slaughterhouse-mk01"].ingredients = UCM5
 data.raw["recipe"]["rc-mk01"].ingredients = UCM5
 data.raw["recipe"]["fbreactor-mk01"].ingredients = UCM5
 data.raw["recipe"]["electric-mining-drill"].ingredients = UCM5
+data.raw["recipe"]["fluid-drill-mk02"].ingredients = UCM5
+data.raw["recipe"]["assembling-machine-2"].ingredients = UCM5
+data.raw["recipe"]["radar"].ingredients = UCM5
+data.raw["radar"]["radar"].max_distance_of_sector_revealed = 40
+data.raw["radar"]["radar"].max_distance_of_nearby_sector_revealed = 20
 --УСМ6
 data.raw["recipe"]["automated-factory-mk01"].ingredients = UCM6
 data.raw["recipe"]["wet-scrubber-mk01"].ingredients = UCM6

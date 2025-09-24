@@ -1,6 +1,6 @@
-data.raw["furnace"]["stone-furnace"].crafting_speed = 0.25
-data.raw["furnace"]["steel-furnace"].crafting_speed = 0.5
-data.raw["furnace"]["electric-furnace"].crafting_speed = 1
+data.raw["furnace"]["stone-furnace"].crafting_speed = 0.4
+data.raw["furnace"]["steel-furnace"].crafting_speed = 0.8
+data.raw["furnace"]["electric-furnace"].crafting_speed = 1.2
 
 data.raw["assembling-machine"]["advanced-foundry-mk01"].crafting_speed = 2
 data.raw["assembling-machine"]["advanced-foundry-mk02"].crafting_speed = 4
@@ -230,3 +230,11 @@ data.raw["recipe"]["grade-1-zinc"].energy_required = 6
 data.raw["recipe"]["grade-1-zinc"].main_product = "grade-2-zinc"
 
 --??? ХРОМ КВАРЦ НИКЕЛЬ СВИНЕЦ
+--КАМЕНЬ
+data.raw["recipe"]["stone-brick"].ingredients = {
+		{type = "item", name = "stone", amount = 4}
+	}
+data.raw["recipe"]["stone-brick"].results = {
+		{type = "item", name = "stone-brick", 	amount = 2}
+	}
+data.raw["recipe"]["stone-brick"].energy_required = 4
