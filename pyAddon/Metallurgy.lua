@@ -238,3 +238,12 @@ data.raw["recipe"]["stone-brick"].results = {
 		{type = "item", name = "stone-brick", 	amount = 2}
 	}
 data.raw["recipe"]["stone-brick"].energy_required = 4
+--КВАРЦ (ваниль 6к10 10к30)
+data.raw["recipe"]["crushed-quartz"].ingredients = {
+		{type = "item", name = "ore-quartz", amount = 4}
+	}
+data.raw["recipe"]["crushed-quartz"].results = {
+		{type = "item", name = "crushed-quartz", 	amount = 1}
+	}
+data.raw["recipe"]["crushed-quartz"].energy_required = 2
+
